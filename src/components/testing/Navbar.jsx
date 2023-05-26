@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Hambug from './Hambug'
-import Close from './Close';
+import Close from './testing/Close';
 
 const Navbar = () => {
     const [model, setModel] = useState(false);
