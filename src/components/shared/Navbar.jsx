@@ -5,6 +5,7 @@ import Button from '../resuable/Button';
 
 const Navbar = () => {
     const [model, setModel] = useState(false);
+    const [theme, setTheme] = useState("light");
     const handleModel = () => {
         if (model == false) {
             setModel(true);
@@ -13,21 +14,31 @@ const Navbar = () => {
             setModel(false);
         }
     }
+    const handleTheme = () =>{
+        console.log("Clicked");
+        console.log(theme);
+        if(theme == "light"){
+            setTheme("dark");
+        }
+        else{
+            setTheme("light");
+        }
+    }
     return (
-        <div className='nav'>
+        <div className={`nav ${theme}`}>
+             {/* for small screen size */}
             <div className='nav__item__small'>
                 <div>Arpana</div>
-                {/* for small screen size */}
-                <div className='theme icons'><FiMoon /></div>
-                <div className='menu icons' onClick={handleModel}>{model ? <FiX /> : <FiMenu />}</div>
+                <div className={`theme icons i${theme}`} onClick={handleTheme}>{theme=="light"?<FiMoon />:<FiSun/>}</div>
+                <div className={`menu icons ${theme}`} onClick={handleModel}>{model ? <FiX /> : <FiMenu />}</div>
             </div>
             {model && <div className='nav__links__small'>
                 <a>Projects</a>
-                <div className='nav__links__line'></div>
+                <div className={`line${theme}`}></div>
                 <a>About Me</a>
-                <div className='nav__links__line'></div>
+                <div className={`line${theme}`}></div>
                 <a>Contact</a>
-                <div className='nav__links__line'></div>
+                <div className={`line${theme}`}></div>
                 <Button title="Hire Me" />
             </div>
             }
@@ -42,7 +53,7 @@ const Navbar = () => {
                 </div>
                 <div className='nav__item__large'>
                     <Button title="Hire Me" />
-                    <div className='theme icons'><FiMoon /></div>
+                    <div className={`theme icons i${theme}`} onClick={handleTheme}>{theme=="light"?<FiMoon />:<FiSun/>}</div>
                 </div>
             </div>
         </div>

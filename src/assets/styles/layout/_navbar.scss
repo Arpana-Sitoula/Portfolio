@@ -36,12 +36,17 @@
             @media (min-width: map-get($breakpoints,medium)) {
                 display: none;
             }
-            &__line {
-                background-color: $--light-secondary;
+            .linedark {
                 height: 1.5px;
-            }
+                background-color: $--dark-secondary;
+                }
+                .linelight {
+                    height: 1.5px;
+                    background-color: $--light-secondary;
+                    }
         }
-        &__large{
+        
+        &__large {
             display: flex;
             column-gap: 40px;
             font-size: 21px;
@@ -56,11 +61,10 @@
     align-items: center;
     justify-content: space-around;
     @media (max-width: map-get($breakpoints, medium)) {
-          display: none;
-      }
+        display: none;
+    }
 }
 .theme {
-    background-color: $--light-secondary;
     padding: 6px 10px;
     border-radius: 12px;
     cursor: pointer;
@@ -68,8 +72,7 @@
         padding: 8px 12px;
         font-size: 22px;
     }
-    &:hover{
+    &:hover {
         opacity: 0.6;
     }
 }
-

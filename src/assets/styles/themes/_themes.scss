@@ -1,0 +1,19 @@
+.dark{
+    color: $--light-primary;
+    background-color: $--dark-primary;
+}
+
+.light{
+    color: $--dark-primary;
+    background-color: $--light-primary;
+}
+
+.ilight{
+    background-color:$--light-secondary ;
+    color: $--dark-primary;
+}
+
+.idark{
+    background-color: $--dark-secondary;
+    color: $--light-primary;
+}
