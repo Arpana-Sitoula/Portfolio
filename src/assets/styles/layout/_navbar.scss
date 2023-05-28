@@ -1,34 +1,75 @@
-.nav{
-    &__item{
-        padding: 20px;
-        font-size: 22px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        &__theme{
-            background-color: $--light-secondary;
-            padding: 6px 10px;
-            border-radius: 12px;
-            cursor: pointer;
+.nav {
+    &__item {
+        &__small {
+            padding: 20px;
+            font-size: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @media (min-width: map-get($breakpoints,medium)) {
+                display: none;
+            }
+            .menu {
+                font-size: 32px;
+                cursor: pointer;
+                @media (min-width: map-get($breakpoints,medium)) {
+                    display: none;
+                }
+            }
         }
-        &__menu{
-            font-size: 32px;
-            cursor: pointer;
+        &__large {
+            display: flex;
+            column-gap: 38px;
         }
     }
-    &__links{
-        padding: 20px;
-        margin-top: 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        font-size: 20px;
-        font-weight: 300;
-        cursor: pointer;
-        box-shadow: 0 4px 8px -4px $--dark-primary;
-        &__line{
-            background-color: $--light-secondary;
-            height: 1.5px;
+    &__links {
+        &__small {
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            font-size: 20px;
+            font-weight: 300;
+            cursor: pointer;
+            box-shadow: 0 4px 8px -4px $--dark-primary;
+            @media (min-width: map-get($breakpoints,medium)) {
+                display: none;
+            }
+            &__line {
+                background-color: $--light-secondary;
+                height: 1.5px;
+            }
+        }
+        &__large{
+            display: flex;
+            column-gap: 40px;
+            font-size: 21px;
+            font-weight: 400;
+            cursor: pointer;
         }
     }
 }
+.nav_container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    @media (max-width: map-get($breakpoints, medium)) {
+          display: none;
+      }
+}
+.theme {
+    background-color: $--light-secondary;
+    padding: 6px 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    @media (min-width: map-get($breakpoints,medium)) {
+        padding: 8px 12px;
+        font-size: 22px;
+    }
+    &:hover{
+        opacity: 0.6;
+    }
+}
+

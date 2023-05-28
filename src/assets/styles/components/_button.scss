@@ -2,12 +2,15 @@
    width: 100px;
    background-color: $--purple;
    border: none;
-   border-radius: 2px;
+   border-radius: 3px;
    padding: 9px 18px;
    color: $--light-primary;
    font-size: 16px;
    cursor: pointer;
    text-align: center;
+   @media (min-width: map-get($breakpoints,medium)) {
+      border-radius: 5px;
+  }
    &:hover{
       background-color: $--dark-purple;
    }
