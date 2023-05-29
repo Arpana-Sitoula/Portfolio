@@ -28,9 +28,9 @@ const Navbar = () => {
         <div className={`nav ${theme}`}>
              {/* for small screen size */}
             <div className='nav__item__small'>
-                <div>Arpana</div>
-                <div className={`theme icons i${theme}`} onClick={handleTheme}>{theme=="light"?<FiMoon />:<FiSun/>}</div>
-                <div className={`menu icons ${theme}`} onClick={handleModel}>{model ? <FiX /> : <FiMenu />}</div>
+                <div>Nirvana</div>
+                <div className={`theme i${theme}`} onClick={handleTheme}>{theme=="light"?<FiMoon />:<FiSun/>}</div>
+                <div className={`menu ${theme}`} onClick={handleModel}>{model ? <FiX /> : <FiMenu />}</div>
             </div>
             {model && <div className='nav__links__small'>
                 <a>Projects</a>
@@ -45,7 +45,7 @@ const Navbar = () => {
 
             {/* for large screen size */}
             <div className='nav_container'>
-                <div>Arpana</div>
+                <div>Nirvana</div>
                 <div className='nav__links__large'>
                     <a>Projects</a>
                     <a>About Me</a>
