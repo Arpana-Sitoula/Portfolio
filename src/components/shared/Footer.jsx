@@ -13,7 +13,7 @@ const Footer = () => {
                     <a className='socials ilight'><SlSocialInstagram/></a>
                     <a className='socials ilight'><SlSocialYoutube/></a>
                 </div>
-                <div className='footer__foot'><span>&#169;</span> React & SCSS Portfolio. NIRVANA</div>
+                <div className='footer__foot'><span>&#169;</span>{new Date().getFullYear()} React & SCSS Portfolio. NIRVANA</div>
             </div>
         </div>
     )
