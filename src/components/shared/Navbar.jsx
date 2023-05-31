@@ -3,9 +3,8 @@ import { FiMoon, FiSun, FiMenu, FiX } from "react-icons/fi";
 import Button from '../resuable/Button';
 
 
-const Navbar = () => {
+const Navbar = ({theme, setTheme}) => {
     const [model, setModel] = useState(false);
-    const [theme, setTheme] = useState("light");
     const handleModel = () => {
         if (model == false) {
             setModel(true);
@@ -15,8 +14,6 @@ const Navbar = () => {
         }
     }
     const handleTheme = () =>{
-        console.log("Clicked");
-        console.log(theme);
         if(theme == "light"){
             setTheme("dark");
         }
