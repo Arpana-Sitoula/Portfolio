@@ -3,10 +3,11 @@ import darkDev from '../../assets/darkDev.svg';
 import lightDev from '../../assets/lightDev.svg';
 import { BsArrowDownCircle } from "react-icons/bs";
 
-const Landing = ({theme,setTheme}) => {
+const Landing = ({theme}) => {
   return (
-    <div className='center-div'>
-        <div className={`landing ${theme}`}>
+    <div className={`${theme}`}>
+        <div className='center-div'>
+        <div className='landing'>
         <div className='landing__body'>
             <div className='landing__body__head'>Hi, I am Nirvana</div>
             <div className='landing__body__info'>A frontend developer, designer & machine learning enthusiast</div>
@@ -14,8 +15,8 @@ const Landing = ({theme,setTheme}) => {
         </div>
         <div>
           {theme=="light"? <img src={darkDev}/>: <img src={lightDev}/>}
-         
         </div>
+    </div>
     </div>
     </div>
   )

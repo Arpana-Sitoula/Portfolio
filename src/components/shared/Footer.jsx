@@ -3,7 +3,7 @@ import { VscGithubAlt } from "react-icons/vsc";
 import { SlSocialBehance, SlSocialLinkedin, SlSocialInstagram,SlSocialYoutube } from "react-icons/sl";
 const Footer = () => {
     return (
-        <div className='center-div'>
+        <div className="center-div">
             <div className='footer'>
                 <div className='footer__head'>Follow me</div>
                 <div className='footer__links'>

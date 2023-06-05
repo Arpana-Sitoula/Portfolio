@@ -6,10 +6,10 @@ import Footer from '../components/shared/Footer'
 const Home = () => {
 const [theme, setTheme] =useState("light");
   return (
-    <div>
-        <Navbar theme={theme} setTheme={setTheme}/>
-        <Landing theme={theme} setTheme={setTheme}/>
-        <Footer theme={theme} setTheme={setTheme}/>
+    <div className={`home ${theme}`}>
+       <div className='home__top'><Navbar theme={theme} setTheme={setTheme}/></div> 
+       <div className='home__body'><Landing theme={theme}/></div>
+       <div className='home__button'> <Footer/></div>
     </div>
   )
 }
