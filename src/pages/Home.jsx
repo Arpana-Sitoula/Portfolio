@@ -9,7 +9,7 @@ const [theme, setTheme] =useState("light");
     <div className={`home ${theme}`}>
        <div className='home__top'><Navbar theme={theme} setTheme={setTheme}/></div> 
        <div className='home__body'><Landing theme={theme}/></div>
-       <div className='home__button'> <Footer/></div>
+       <div className='home__foot'> <Footer theme={theme}/></div>
     </div>
   )
 }
