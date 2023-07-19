@@ -3,3 +3,10 @@
     align-items: center;
     justify-content: center;
 }
+
+main {
+    padding: 1rem;
+    @media (min-width: map-get($breakpoints,medium)) {
+        padding: 2vw;
+    }
+}

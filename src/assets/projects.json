@@ -1,0 +1,41 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "image": "https://react-tailwindcss-portfolio.netlify.app/static/media/mobile-project-2.a5aae786.jpg",
+      "name": "Project name",
+      "category": "Category 1"
+    },
+    {
+      "id": 2,
+      "image": "https://react-tailwindcss-portfolio.netlify.app/static/media/mobile-project-2.a5aae786.jpg",
+      "name": "Project name",
+      "category": "Category 4"
+    },
+    {
+      "id": 3,
+      "image": "https://react-tailwindcss-portfolio.netlify.app/static/media/mobile-project-2.a5aae786.jpg",
+      "name": "Project name",
+      "category": "Category 3"
+    },
+    {
+      "id": 4,
+      "image": "https://react-tailwindcss-portfolio.netlify.app/static/media/mobile-project-2.a5aae786.jpg",
+      "name": "Project name",
+      "category": "Category 4"
+    },
+    {
+      "id": 5,
+      "image": "https://react-tailwindcss-portfolio.netlify.app/static/media/mobile-project-2.a5aae786.jpg",
+
+      "name": "Project name",
+      "category": "Category 2"
+    },
+    {
+      "id": 6,
+      "image": "https://react-tailwindcss-portfolio.netlify.app/static/media/mobile-project-2.a5aae786.jpg",
+      "name": "Project name",
+      "category": "Category 3"
+    }
+  ]
+}
