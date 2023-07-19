@@ -2,6 +2,7 @@
 @import 'abstracts/colors';
 @import 'base/typography';
 @import 'themes/themes';
+
 @import 'base/resets';
 @import 'base/base';
 @import 'components/button';
@@ -11,3 +12,8 @@
 @import 'layout/projectsSection';
 @import 'layout/footer';
 @import 'layout/navbar';
+
+@import 'layout/footer';
+@import 'layout/landing';
+@import 'pages/home';
+
