@@ -1,7 +1,7 @@
 .card {
   $self: &;
 
-  width: calc(360px - 2rem);
+  width: 400px;
   display: inline-block;
   text-decoration: none;
   border-radius: 10px;
@@ -19,11 +19,13 @@
 
   &__info-container {
     #{ $self }__project-name {
+      font-size: 24px;
       padding-block: 1rem;
       color: $--dark-primary;
     }
 
     #{ $self }__project-category {
+      font-size: 18px;
       padding-block: 0 1rem;
       color: $--dark-secondary;
     }

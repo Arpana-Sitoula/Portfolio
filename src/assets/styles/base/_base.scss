@@ -1,4 +1,4 @@
-.center-div{
+.center-div {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,4 +9,7 @@ main {
     @media (min-width: map-get($breakpoints,medium)) {
         padding: 2vw;
     }
+}
+a {
+    text-decoration: none;
 }

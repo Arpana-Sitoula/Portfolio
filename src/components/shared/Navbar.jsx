@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FiMoon, FiSun, FiMenu, FiX } from "react-icons/fi";
 import Button from "../resuable/Button";
+import { Link } from "react-router-dom";
 
 const Navbar = ({ theme, setTheme }) => {
   const [model, setModel] = useState(false);
@@ -22,7 +23,7 @@ const Navbar = ({ theme, setTheme }) => {
     <div className={`nav ${theme}`}>
       {/* for small screen size */}
       <div className="nav__item__small">
-        <div>Nirvana</div>
+        <Link to='/'><div>&lt;Arpana/&gt;</div></Link>
         <div className={`theme i${theme}`} onClick={handleTheme}>
           {theme == "light" ? <FiMoon /> : <FiSun />}
         </div>
@@ -32,11 +33,17 @@ const Navbar = ({ theme, setTheme }) => {
       </div>
       {model && (
         <div className="nav__links__small">
-          <a>Projects</a>
+          <Link className={`${theme}`} to="/project">
+            Projects
+          </Link>
           <div className={`line${theme}`}></div>
-          <a>About Me</a>
+          <Link className={`${theme}`} to="about">
+            About Me
+          </Link>
           <div className={`line${theme}`}></div>
-          <a>Contact</a>
+          <Link className={`${theme}`} to="contact">
+            Contact
+          </Link>
           <div className={`line${theme}`}></div>
           <Button title="Hire Me" />
         </div>
@@ -44,11 +51,17 @@ const Navbar = ({ theme, setTheme }) => {
 
       {/* for large screen size */}
       <div className="nav_container">
-        <div> &lt;Arpana/&gt;</div>
+      <Link to='/'><div className={`${theme}`}>&lt;Arpana/&gt;</div></Link>
         <div className="nav__links__large">
-          <a>Projects</a>
-          <a>About Me</a>
-          <a>Contact</a>
+          <Link className={`${theme}`} to="/project">
+            Projects
+          </Link>
+          <Link className={`${theme}`} to="about">
+            About Me
+          </Link>
+          <Link className={`${theme}`} to="contact">
+            Contact
+          </Link>
         </div>
         <div className="nav__item__large">
           <Button title="Hire Me" />

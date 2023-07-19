@@ -28,6 +28,10 @@ const ProjectsSection = () => {
   ));
   return (
     <section className="projects-section">
+      <div className="projects-section__title">Projects portfolio</div>
+      <div className="projects-section__info">
+        Search projects by title or filter by category
+      </div>
       <div className="projects-section__header">
         <SearchBox />
         <Dropdown projects={projects} filter={filter} setFilter={setFilter} />
