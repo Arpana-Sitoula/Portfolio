@@ -1,0 +1,14 @@
+.search-form {
+  display: flex;
+
+  &__input {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid $--dark-primary;
+    outline: none;
+
+    &:hover {
+      border-width: 2px;
+    }
+  }
+}
