@@ -30,16 +30,16 @@ const Landing = ({ theme }) => {
           <div className="lgLanding__body">
             <div className="lgLanding__body__content">
               <div className="lgLanding__body__content__head">Hi, I am Arpana</div>
-              <div className="lgLanding__body__content__info">
+              <div className={`lgLanding__body__content__info ${theme}Txt`}>
                 A frontend developer, designer & machine learning enthusiast
               </div>
               <div className="lgLanding__body__content__btn"><div className="dlBtn"><BsArrowDownCircle /> Download CV</div></div>
             </div>
             <div className="lgLanding__body__image">
               {theme == "light" ? (
-                <img src={darkDev} width="200%" />
+                <img src={darkDev} width="180%" />
               ) : (
-                <img src={lightDev} width="200%"/>
+                <img src={lightDev} width="180%"/>
               )}
             </div>
           </div>
