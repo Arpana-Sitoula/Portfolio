@@ -1,14 +1,16 @@
 .home{
     &__top{
-        margin-bottom: 10px;
+        padding-top: 10px;
+        margin-bottom: 30px;
     }
     &__body{
-        margin-bottom:170px;
+        margin-bottom:100px;
     }
     &__project{
-        margin-bottom: 20px;
+        margin-bottom: 70px;
     }
     &__foot{
-        margin-bottom: 20px;
+        margin-top: 60px;
+        padding-bottom: 30px;
     }
 }

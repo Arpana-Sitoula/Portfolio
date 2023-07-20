@@ -19,6 +19,7 @@
         }
         &__large {
             display: flex;
+            align-items: center;
             column-gap: 38px;
         }
     }
@@ -36,14 +37,6 @@
             @media (min-width: map-get($breakpoints,medium)) {
                 display: none;
             }
-            .linedark {
-                height: 1.5px;
-                background-color: $--dark-secondary;
-            }
-            .linelight {
-                height: 1.5px;
-                background-color: $--light-secondary;
-            }
         }
 
         &__large {
@@ -56,7 +49,8 @@
     }
 }
 .nav_container {
-    margin-top: 20px;
+    //margin-top: 20px;
+    padding-top: 20px;
     display: flex;
     align-items: center;
     justify-content: space-around;

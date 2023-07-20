@@ -3,6 +3,7 @@ import { projects } from "../assets/projects.json";
 import Dropdown from "../components/resuable/Dropdown";
 import ProjectCard from "../components/resuable/ProjectCard";
 import SearchBox from "../components/resuable/SearchBox";
+import Button from "../components/resuable/Button";
 
 const ProjectsSection = () => {
   const [listedProjects, setListedProjects] = useState(projects);

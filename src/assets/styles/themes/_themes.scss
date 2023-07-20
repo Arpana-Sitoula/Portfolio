@@ -1,25 +1,33 @@
-.dark{
+.dark {
     color: $--light-primary;
     background-color: $--dark-primary;
 }
 
-.light{
+.light {
     color: $--dark-primary;
     background-color: $--light-primary;
 }
 
-.ilight{
-    background-color:$--light-secondary ;
+.ilight {
+    background-color: $--light-secondary;
     color: $--dark-primary;
 }
 
-.idark{
+.idark {
     background-color: $--dark-secondary;
     color: $--light-primary;
 }
-.darkTxt{
-    color:white;
+.darkTxt {
+    color: white;
 }
-.lightTxt{
-    color:rgb(120, 125, 131);;
+.lightTxt {
+    color: rgb(120, 125, 131);
+}
+.linedark {
+    height: 1.5px;
+    background-color: $--dark-secondary;
+}
+.linelight {
+    height: 1.5px;
+    background-color: $--light-secondary;
 }

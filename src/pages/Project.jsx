@@ -4,6 +4,7 @@ import Footer from "../components/shared/Footer";
 import ProjectsSection from "../containers/ProjectsSection";
 import Navbar from "../components/shared/Navbar";
 
+
 const Project = () => {
   return (
     <div>

@@ -1,7 +1,8 @@
-.btn{
+.btn {
    width: 100px;
    background-color: $--purple;
    border: none;
+   box-sizing: border-box;
    border-radius: 3px;
    padding: 9px 18px;
    color: $--light-primary;
@@ -10,8 +11,28 @@
    text-align: center;
    @media (min-width: map-get($breakpoints,medium)) {
       border-radius: 5px;
-  }
-   &:hover{
+   }
+   &:hover {
+      background-color: $--dark-purple;
+   }
+}
+
+.btnlg{
+   width: 180px;
+   text-align: center;
+   background-color: $--purple;
+   border: none;
+   box-sizing: border-box;
+   border-radius: 6px;
+   padding: 12px 22px;
+   color: $--light-primary;
+   font-size: 22px;
+   cursor: pointer;
+   text-align: center;
+   @media (min-width: map-get($breakpoints,medium)) {
+      border-radius: 5px;
+   }
+   &:hover {
       background-color: $--dark-purple;
    }
 }

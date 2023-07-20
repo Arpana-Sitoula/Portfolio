@@ -16,11 +16,20 @@
             text-transform: capitalize;
         }
         &__btn {
-            padding: 10px 20px;
-            border: 1px solid $--dark-secondary;
+            background-color:#eef2ff;
+            color:gray;
+            padding: 9px 18px;
+            font-size: 16px;
+            border: 1px solid $--light-secondary;
             border-radius: 10px;
             margin: 45px 0px;
+            width: 160px;
             cursor: pointer;
+            &:hover {
+                background-color: $--purple;
+                color: white;
+                border: 1px solid $--purple;
+            }
         }
     }
 }
@@ -71,11 +80,12 @@
             &__btn {
                 background-color:#eef2ff;
                 color:gray;
-                padding: 10px 20px;
+                padding: 12px 22px;
+                font-size: 20px;
                 border: 1px solid $--light-secondary;
                 border-radius: 10px;
                 margin: 45px 0px;
-                width: 180px;
+                width: 200px;
                 cursor: pointer;
                 &:hover {
                     background-color: $--purple;
