@@ -77,7 +77,7 @@ const HireMeModel = ({ setHireModel }) => {
             <p className="err">You must follow proper email pattern</p>
           )}
         </div>
-        <Dropdown projects={projects} filter={null} setFilter={() => null} />
+        {/* <Dropdown projects={projects} filter={null} setFilter={() => null} /> */}
         <textarea
           style={{ height: "150px" }}
           placeholder="Project description"
