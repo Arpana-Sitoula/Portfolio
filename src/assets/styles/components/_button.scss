@@ -36,3 +36,22 @@
       background-color: $--dark-purple;
    }
 }
+.closebtn{
+   width: 80px;
+   text-align: center;
+   background-color: #4b5563;
+   border: none;
+   box-sizing: border-box;
+   border-radius: 6px;
+   padding: 9px 18px;
+   color: $--light-primary;
+   font-size: 16px;
+   cursor: pointer;
+   text-align: center;
+   @media (min-width: map-get($breakpoints,medium)) {
+      border-radius: 5px;
+   }
+   &:hover {
+      background-color: #232d3c;
+   }
+}

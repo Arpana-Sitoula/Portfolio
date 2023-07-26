@@ -2,13 +2,24 @@
     position: relative;
     background-color: white;
     display: flex;
+    width: auto;
     border-radius: 9px;
+    width: 450px;
     flex-direction: column;
-    gap: 10px;
-    padding: 12px 24px;
-    &__title{
+    gap: 22px;
+    padding: 18px 32px;
+    &__title {
         font-size: 18px;
-        margin: 12px 0px 8px 0px;
+        margin: 20px 0px 8px 0px;
         text-align: center;
+    }
+    &__label {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+    &__closebtn {
+        display: flex;
+        justify-content: flex-end;
     }
 }
