@@ -26,7 +26,7 @@ const Navbar = ({ theme, setTheme }) => {
       {/* for small screen size */}
       <div className="nav__item__small">
         <Link to="/">
-          <div>&lt;Arpana/&gt;</div>
+          <div className="logo">&lt;Arpana/&gt;</div>
         </Link>
         <div className={`theme i${theme}`} onClick={handleTheme}>
           {theme == "light" ? <FiMoon /> : <FiSun />}
@@ -56,7 +56,7 @@ const Navbar = ({ theme, setTheme }) => {
       {/* for large screen size */}
       <div className="nav_container">
         <Link to="/">
-          <div className={`${theme}`}>&lt;Arpana/&gt;</div>
+          <div className='logo'>&lt;Arpana/&gt;</div>
         </Link>
         <div className="nav__links__large">
           <Link className={`${theme}`} to="/project">

@@ -109,3 +109,10 @@
     justify-content: center;
     gap: 9px;
 }
+.dlBtn a {
+    text-decoration: none;
+    color: gray;
+    &:hover{
+        color: white;
+    }
+}

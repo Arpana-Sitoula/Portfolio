@@ -1,0 +1,33 @@
+.aboutus{
+    display: flex;
+    gap: 42px;
+    align-items: center;
+    margin:30px 42px 30px 42px ;
+    padding: 2rem;
+    &__desc{
+        line-height: 1.5;
+        font-size: 18px;
+    }
+   
+}
+.stats{
+    height: 200px;
+    background-color: $--light-secondary;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .mystats{
+       display: flex;
+       flex-direction: column;
+       gap: 12px;
+       align-items: center;
+       &__number{
+        font-size: 32px;
+        font-weight: 600;
+       }
+       &__type{
+        font-size: 18px;
+       }
+    }
+}

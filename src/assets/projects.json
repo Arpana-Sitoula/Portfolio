@@ -4,38 +4,38 @@
       "id": 1,
       "image": "https://react-tailwindcss-portfolio.netlify.app/static/media/mobile-project-2.a5aae786.jpg",
       "name": "Project name",
-      "category": "Category 1"
+      "category": "Web Development"
     },
     {
       "id": 2,
       "image": "https://react-tailwindcss-portfolio.netlify.app/static/media/mobile-project-2.a5aae786.jpg",
       "name": "Project name",
-      "category": "Category 4"
+      "category": "Graphics Design"
     },
     {
       "id": 3,
       "image": "https://react-tailwindcss-portfolio.netlify.app/static/media/mobile-project-2.a5aae786.jpg",
       "name": "Project name",
-      "category": "Category 3"
+      "category": "Graphics Design"
     },
     {
       "id": 4,
       "image": "https://react-tailwindcss-portfolio.netlify.app/static/media/mobile-project-2.a5aae786.jpg",
       "name": "Project name",
-      "category": "Category 4"
+      "category": "Machine Learning"
     },
     {
       "id": 5,
       "image": "https://react-tailwindcss-portfolio.netlify.app/static/media/mobile-project-2.a5aae786.jpg",
 
       "name": "Project name",
-      "category": "Category 2"
+      "category": "Web Development"
     },
     {
       "id": 6,
       "image": "https://react-tailwindcss-portfolio.netlify.app/static/media/mobile-project-2.a5aae786.jpg",
       "name": "Project name",
-      "category": "Category 3"
+      "category": "Machine Learning"
     }
   ]
 }
