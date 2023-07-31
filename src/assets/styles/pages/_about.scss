@@ -4,6 +4,11 @@
     align-items: center;
     margin:30px 42px 30px 42px ;
     padding: 2rem;
+    @media (max-width: 850px)  {
+       display: flex;
+       flex-direction: column; 
+       text-align: justify;
+    }
     &__desc{
         line-height: 1.5;
         font-size: 18px;
@@ -17,6 +22,14 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    @media (max-width: 850px)  {
+        height: 600px;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        gap: 60px;
+        text-align: justify;
+     }
     .mystats{
        display: flex;
        flex-direction: column;

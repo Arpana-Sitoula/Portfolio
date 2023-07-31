@@ -49,7 +49,7 @@ const Navbar = ({ theme, setTheme }) => {
             Contact
           </Link>
           <div className={`line${theme}`}></div>
-          <Button title="Hire Me" btn="btn"/>
+          <Button title="Hire Me" btn="btn" onClick={() => setHireModel(true)}/>
         </div>
       )}
 
