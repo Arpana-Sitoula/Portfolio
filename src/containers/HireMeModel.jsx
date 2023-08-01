@@ -1,6 +1,4 @@
 import React, { useRef } from "react";
-import { projects } from "../assets/projects.json";
-import Dropdown from "../components/resuable/Dropdown";
 import Button from "../components/resuable/Button";
 import { VscChromeClose } from "react-icons/vsc";
 import { useForm } from "react-hook-form";
@@ -77,7 +75,6 @@ const HireMeModel = ({ setHireModel }) => {
             <p className="err">You must follow proper email pattern</p>
           )}
         </div>
-        {/* <Dropdown projects={projects} filter={null} setFilter={() => null} /> */}
         <textarea
           style={{ height: "150px" }}
           placeholder="Project description"
