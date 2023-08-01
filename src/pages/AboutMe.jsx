@@ -52,13 +52,13 @@ const AboutMe = () => {
             world of data.
             <br/><br/>
             Beyond the realm of programming, my love for movies and books knows
-            no bounds. One of my all-time favorite films is "Sixth Sense,"
-            captivating me with its brilliant storytelling. When I'm not
+            no bounds. One of my all-time favorite films is "Sixth Sense"
+          . When I'm not
             absorbed in the world of technology or entertainment, you can often
             find me spending time with animals, as I'm a proud vegetarian and a
             fervent animal lover. I genuinely wish to make a positive impact on
             the environment and contribute to creating a better world for all
-            living beings – both plants and animals
+            living beings – both plants and animals.
           </div>
         </div>
         <div className="stats">

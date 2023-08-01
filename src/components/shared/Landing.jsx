@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import darkDev from "../../assets/darkDev.svg";
 import lightDev from "../../assets/lightDev.svg";
 import { BsArrowDownCircle } from "react-icons/bs";
-import resume  from "../../assets/Arpana_resume.pdf";
+import resume from "../../assets/Arpana_resume.pdf";
+import { ThemeContext } from "../../context/themeContext";
 
-const Landing = ({ theme }) => {
+const Landing = () => {
+  const { theme, setTheme } = useContext(ThemeContext);
+
   return (
     <div className={`${theme}`}>
       <div className="center-div">

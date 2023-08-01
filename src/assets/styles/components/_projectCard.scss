@@ -3,6 +3,7 @@
 
   width: 400px;
   display: inline-block;
+  padding-bottom: 20px;
   text-decoration: none;
   border-radius: 10px;
   overflow: hidden;
@@ -20,14 +21,24 @@
   &__info-container {
     #{ $self }__project-name {
       font-size: 24px;
-      padding-block: 1rem;
-      color: $--dark-primary;
+      padding: 12px;
+      &dark{
+        color: $--light-primary;
+      }
+      &light{
+        color: $--dark-primary
+      }
     }
 
     #{ $self }__project-category {
       font-size: 18px;
-      padding-block: 0 1rem;
-      color: $--dark-secondary;
+      padding:12px;
+      &dark{
+        color: $--light-secondary;
+      }
+      &light{
+        color: $--dark-secondary;
+      }
     }
   }
 }

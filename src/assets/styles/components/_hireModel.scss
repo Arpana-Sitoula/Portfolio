@@ -1,6 +1,5 @@
 .hireme {
     position: relative;
-    background-color: white;
     display: flex;
     width: auto;
     border-radius: 9px;
@@ -22,4 +21,14 @@
         display: flex;
         justify-content: flex-end;
     }
+}
+.hiremelight{
+    @extend .hireme;
+    background-color: white;
+    color: $--dark-primary;
+}
+.hiremedark{
+    @extend .hireme;
+    background-color: $--dark-primary;
+    color: $--light-primary;
 }

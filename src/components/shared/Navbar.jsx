@@ -1,12 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { FiMoon, FiSun, FiMenu, FiX } from "react-icons/fi";
 import Button from "../resuable/Button";
 import { Link } from "react-router-dom";
 import HireMeModel from "../../containers/HireMeModel";
+import { ThemeContext } from "../../context/themeContext";
 
-const Navbar = ({ theme, setTheme }) => {
+const Navbar = () => {
+  const { theme, setTheme } = useContext(ThemeContext);
   const [model, setModel] = useState(false);
-  const [hireModel,setHireModel] = useState(false);
+  const [hireModel, setHireModel] = useState(false);
   const handleModel = () => {
     if (model == false) {
       setModel(true);
@@ -41,22 +43,26 @@ const Navbar = ({ theme, setTheme }) => {
             Projects
           </Link>
           <div className={`line${theme}`}></div>
-          <Link className={`${theme}`} to="about">
+          <Link className={`${theme}`} to="/about">
             About Me
           </Link>
           <div className={`line${theme}`}></div>
-          <Link className={`${theme}`} to="contact">
+          <Link className={`${theme}`} to="/contact">
             Contact
           </Link>
           <div className={`line${theme}`}></div>
-          <Button title="Hire Me" btn="btn" onClick={() => setHireModel(true)}/>
+          <Button
+            title="Hire Me"
+            btn="btn"
+            onClick={() => setHireModel(true)}
+          />
         </div>
       )}
 
       {/* for large screen size */}
       <div className="nav_container">
         <Link to="/">
-          <div className='logo'>&lt;Arpana/&gt;</div>
+          <div className="logo">&lt;Arpana/&gt;</div>
         </Link>
         <div className="nav__links__large">
           <Link className={`${theme}`} to="/project">
@@ -70,14 +76,18 @@ const Navbar = ({ theme, setTheme }) => {
           </Link>
         </div>
         <div className="nav__item__large">
-            <Button title="Hire Me" btn="btn" onClick={() => setHireModel(true)}/>
-          
+          <Button
+            title="Hire Me"
+            btn="btn"
+            onClick={() => setHireModel(true)}
+          />
+
           <div className={`theme icons i${theme}`} onClick={handleTheme}>
             {theme == "light" ? <FiMoon /> : <FiSun />}
           </div>
         </div>
       </div>
-     {hireModel && <HireMeModel setHireModel={setHireModel}/>}
+      {hireModel && <HireMeModel setHireModel={setHireModel} />}
     </div>
   );
 };

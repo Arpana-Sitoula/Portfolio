@@ -1,11 +1,14 @@
-import React, { useRef } from "react";
+import React, { useRef, useContext } from "react";
 import Button from "../components/resuable/Button";
 import { VscChromeClose } from "react-icons/vsc";
 import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
+import { ThemeContext } from "../context/themeContext";
+
 
 const HireMeModel = ({ setHireModel }) => {
   const form = useRef();
+  const { theme, setTheme } = useContext(ThemeContext);
 
   const {
     handleSubmit,
@@ -42,7 +45,7 @@ const HireMeModel = ({ setHireModel }) => {
 
   return (
     <div className="overlay">
-      <form className="  hireme" ref={form} onSubmit={handleSubmit(onSubmit)}>
+      <form className={`hireme${theme}`} ref={form} onSubmit={handleSubmit(onSubmit)}>
         <div className="cancel" onClick={() => setHireModel(false)}>
           <VscChromeClose />
         </div>

@@ -1,11 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { projects } from "../assets/projects.json";
 import Dropdown from "../components/resuable/Dropdown";
 import ProjectCard from "../components/resuable/ProjectCard";
 import SearchBox from "../components/resuable/SearchBox";
-import Button from "../components/resuable/Button";
+import { ThemeContext } from "../context/themeContext";
 
 const ProjectsSection = () => {
+  const { theme, setTheme } = useContext(ThemeContext);
   const [listedProjects, setListedProjects] = useState(projects);
   const [filter, setFilter] = useState("All Projects");
 
@@ -37,7 +38,7 @@ const ProjectsSection = () => {
         <SearchBox />
         <Dropdown projects={projects} filter={filter} setFilter={setFilter} />
       </div>
-      <div className="projects-section__card-container">{projectList}</div>
+      <div className={`projects-section__card-container ${theme}`}>{projectList}</div>
     </section>
   );
 };
