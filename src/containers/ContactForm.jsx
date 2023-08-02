@@ -1,10 +1,13 @@
-import React , { useRef } from "react";
+import React , { useRef, useContext } from "react";
 import Button from "../components/resuable/Button";
 import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
+import { ThemeContext } from "../context/themeContext";
 
 
 const ContactForm = () => {
+  const { theme, setTheme } = useContext(ThemeContext);
+
   const form = useRef();
   const {
     handleSubmit,
@@ -41,7 +44,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="contact_form">
+    <div className={`contact_form${theme}`}>
       <div className="contact_form__head">Contact Form</div>
       <form className="contact_form__form" ref={form} onSubmit={handleSubmit(onSubmit)}>
         <label>Full Name</label>

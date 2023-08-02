@@ -1,6 +1,7 @@
-import React , {useContext} from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { ThemeContext } from "../../context/themeContext";
+
 
 
 const ProjectCard = ({ projectImg, projectName, projectCategory }) => {
@@ -9,10 +10,8 @@ const ProjectCard = ({ projectImg, projectName, projectCategory }) => {
   return (
     <Link className="card">
       <div className="card__image-container">
-        <img
-          className="card__image"
-          src={projectImg}
-        />
+        <img className="card__image" src={projectImg} height={"360px"}/>
+        {console.log({projectImg})}
       </div>
       <div className="card__info-container">
         <h3 className={`card__project-name${theme}`}>{projectName}</h3>

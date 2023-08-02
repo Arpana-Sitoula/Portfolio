@@ -17,7 +17,7 @@ const Footer = () => {
   const leetcodeUrl = "https://leetcode.com/arpana_sitoula/";
 
   return (
-    <div className="center-div">
+    <div className={`center-div ${theme}`}>
       <div className="footer">
         <div className="footer__head">Follow me</div>
         <div className="footer__links">

@@ -1,6 +1,5 @@
 .card {
   $self: &;
-
   width: 400px;
   display: inline-block;
   padding-bottom: 20px;
@@ -15,6 +14,7 @@
   &__image-container {
     #{ $self }__image {
       width: 100%;
+      object-fit: cover;
     }
   }
 
@@ -22,21 +22,21 @@
     #{ $self }__project-name {
       font-size: 24px;
       padding: 12px;
-      &dark{
+      &dark {
         color: $--light-primary;
       }
-      &light{
-        color: $--dark-primary
+      &light {
+        color: $--dark-primary;
       }
     }
 
     #{ $self }__project-category {
       font-size: 18px;
-      padding:12px;
-      &dark{
+      padding: 12px;
+      &dark {
         color: $--light-secondary;
       }
-      &light{
+      &light {
         color: $--dark-secondary;
       }
     }

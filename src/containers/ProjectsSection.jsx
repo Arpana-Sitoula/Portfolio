@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useContext } from "react";
-import { projects } from "../assets/projects.json";
+import { projects } from "../assets/project/projects";
 import Dropdown from "../components/resuable/Dropdown";
 import ProjectCard from "../components/resuable/ProjectCard";
 import SearchBox from "../components/resuable/SearchBox";
@@ -29,7 +29,7 @@ const ProjectsSection = () => {
     />
   ));
   return (
-    <section className="projects-section">
+    <section className={`projects-section ${theme}`}>
       <div className="projects-section__title">Projects portfolio</div>
       <div className="projects-section__info">
         Search projects by title or filter by category

@@ -1,7 +1,10 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useContext } from "react";
+import { ThemeContext } from "../../context/themeContext";
 
 const Dropdown = ({ projects, filter, setFilter }) => {
   const [showDropdown, setShowDropdown] = useState(false);
+  const { theme, setTheme } = useContext(ThemeContext);
+
 
   const options = useRef(["All Projects"]);
 
@@ -19,11 +22,11 @@ const Dropdown = ({ projects, filter, setFilter }) => {
       {showDropdown ? (
         <>
           <div className="dropdown__overlay" />
-          <div className="dropdown__list">
+          <div className={`dropdown__list ${theme}`}>
             {options.current.map((option, index) => (
               <div
                 key={index}
-                className="dropdown__option"
+                className={`dropdown__option ${theme}`}
                 onClick={() => setFilter(option)}
               >
                 {option}

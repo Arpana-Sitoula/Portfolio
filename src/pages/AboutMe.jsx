@@ -1,9 +1,11 @@
-import React from "react";
+import React, {useContext} from "react";
 import Navbar from "../components/shared/Navbar";
 import Footer from "../components/shared/Footer";
 import avatar from '../assets/arpana.jpg'
-
+import { ThemeContext } from "../context/themeContext";
 const AboutMe = () => {
+  const { theme, setTheme } = useContext(ThemeContext);
+
   const stats = [
     {
       number: "2",
@@ -25,7 +27,7 @@ const AboutMe = () => {
   return (
     <div>
       <Navbar />
-      <div>
+      <div className={`${theme}`}>
         <div className="aboutus">
           <div className="aboutus__img">
             <img
