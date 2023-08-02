@@ -63,7 +63,7 @@ const AboutMe = () => {
             living beings – both plants and animals.
           </div>
         </div>
-        <div className="stats">
+        <div className={`stats${theme}`}>
           {stats.map((my) => (
             <div className="mystats">
               <div className="mystats__number">{my.number}</div>

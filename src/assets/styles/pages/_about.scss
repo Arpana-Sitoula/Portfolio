@@ -2,8 +2,8 @@
     display: flex;
     gap: 42px;
     align-items: center;
-    margin:30px 42px 30px 42px ;
-    padding: 2rem;
+    margin:0px 42px 30px 42px ;
+    padding: 50px 30px 30px 30px;
     @media (max-width: 850px)  {
        display: flex;
        flex-direction: column; 
@@ -17,8 +17,6 @@
 }
 .stats{
     height: 200px;
-    background-color: $--light-secondary;
-    margin-bottom: 30px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -43,4 +41,12 @@
         font-size: 18px;
        }
     }
+}
+.statsdark{
+    @extend .stats;
+    background-color: $--dark-secondary;
+}
+.statslight{
+    @extend .stats;
+    background-color: $--light-secondary;
 }
