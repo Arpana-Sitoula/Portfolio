@@ -9,6 +9,9 @@
     position: relative;
     cursor: pointer;
     z-index: 1;
+    display: flex;
+    align-items: center;
+    gap:12px;
   }
 
   &__overlay {

@@ -59,11 +59,13 @@
     }
 }
 .theme {
-    padding: 6px 10px;
+    padding: 10px 10px;
     border-radius: 12px;
+    display: flex;
+    align-items: center;
     cursor: pointer;
     @media (min-width: map-get($breakpoints,medium)) {
-        padding: 8px 12px;
+        padding: 12px 12px;
         font-size: 22px;
     }
     &:hover {
