@@ -39,6 +39,10 @@ const Navbar = () => {
       </div>
       {model && (
         <div className="nav__links__small">
+          <Link className={`${theme}`} to="/">
+            Home
+          </Link>
+          <div className={`line${theme}`}></div>
           <Link className={`${theme}`} to="/project">
             Projects
           </Link>
@@ -65,6 +69,9 @@ const Navbar = () => {
           <div className="logo">&lt;Arpana/&gt;</div>
         </Link>
         <div className="nav__links__large">
+          <Link className={`${theme}`} to="/">
+            Home
+          </Link>
           <Link className={`${theme}`} to="/project">
             Projects
           </Link>
