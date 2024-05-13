@@ -10,7 +10,7 @@ const Project = () => {
     <div>
       <Navbar />
       <div className="project">
-        <ProjectsSection />
+        <ProjectsSection number={9}/>
       </div>
       <Footer />
     </div>

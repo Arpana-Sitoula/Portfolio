@@ -18,7 +18,7 @@ const Home = () => {
         <Landing />
       </div>
       <div className="home__project">
-        <ProjectsSection/>
+        <ProjectsSection number={3}/>
         <Link to="/project">
           <div className="center-div">
             <Button title="More Projects" btn="btnlg" />

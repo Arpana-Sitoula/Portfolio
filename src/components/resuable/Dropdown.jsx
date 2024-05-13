@@ -1,11 +1,10 @@
 import React, { useRef, useState, useContext } from "react";
 import { ThemeContext } from "../../context/themeContext";
-import { AiFillCaretDown ,AiFillCaretUp } from "react-icons/ai";
+import { AiFillCaretDown, AiFillCaretUp } from "react-icons/ai";
 
 const Dropdown = ({ projects, filter, setFilter }) => {
   const [showDropdown, setShowDropdown] = useState(false);
   const { theme, setTheme } = useContext(ThemeContext);
-
 
   const options = useRef(["All Projects"]);
 
@@ -19,7 +18,10 @@ const Dropdown = ({ projects, filter, setFilter }) => {
 
   return (
     <div className="dropdown" onClick={() => setShowDropdown((prev) => !prev)}>
-      <div className="dropdown__btn">{filter}{showDropdown ?  <AiFillCaretUp/>: <AiFillCaretDown/> }</div>
+      <div className="dropdown__btn">
+        {filter}
+        {showDropdown ? <AiFillCaretUp /> : <AiFillCaretDown />}
+      </div>
       {showDropdown ? (
         <>
           <div className="dropdown__overlay" />

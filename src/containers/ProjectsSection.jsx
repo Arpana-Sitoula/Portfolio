@@ -5,10 +5,11 @@ import ProjectCard from "../components/resuable/ProjectCard";
 import SearchBox from "../components/resuable/SearchBox";
 import { ThemeContext } from "../context/themeContext";
 
-const ProjectsSection = () => {
+const ProjectsSection = ({number}) => {
   const { theme, setTheme } = useContext(ThemeContext);
   const [listedProjects, setListedProjects] = useState(projects);
   const [filter, setFilter] = useState("All Projects");
+ 
 
   useEffect(() => {
     if (filter !== "All Projects") {
@@ -19,6 +20,16 @@ const ProjectsSection = () => {
       setListedProjects(projects);
     }
   }, [filter]);
+
+  useEffect(() => {
+    console.log({number})
+    if (number <= 3) {
+      setListedProjects(projects.slice(1,4));
+    }
+    else {
+      setListedProjects(projects.slice(1,7));
+    }
+  }, [number]);
 
   const projectList = listedProjects.map((project) => (
     <ProjectCard
@@ -38,7 +49,9 @@ const ProjectsSection = () => {
         <SearchBox />
         <Dropdown projects={projects} filter={filter} setFilter={setFilter} />
       </div>
-      <div className={`projects-section__card-container ${theme}`}>{projectList}</div>
+      <div className={`projects-section__card-container ${theme}`}>
+        {projectList}
+      </div>
     </section>
   );
 };
