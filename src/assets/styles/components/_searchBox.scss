@@ -3,22 +3,23 @@
     gap: 4px;
     &__input {
       padding: 0.5rem;
-      border-radius: 5px;
-      border: 1px solid $--dark-primary;
+      border-radius: 10px;
+
 
       &:hover {
         outline: 2px solid black;
+        outline-offset: -2px;
       }
     }
     button {
-      background-color: rgb(121, 190, 255);
-      padding: 0px 16px;
+      background-color: #f7f8fc;
+      padding: 10px 16px;
       cursor: pointer;
-      border: 1px solid $--dark-primary;
-      border-radius: 5px;
+      border: none;
+      border-radius: 10px;
 
       &:hover {
-        background-color: rgb(91, 173, 250);
+        background-color: #f7f8fc;
 
       }
     }

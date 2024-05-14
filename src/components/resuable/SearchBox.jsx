@@ -1,5 +1,5 @@
 import React from "react";
-import { FaSearch } from "react-icons/fa";
+import { CiSearch } from "react-icons/ci";
 
 const SearchBox = ({ setSearchInput, handleSearch }) => {
   return (
@@ -12,7 +12,7 @@ const SearchBox = ({ setSearchInput, handleSearch }) => {
         placeholder="Search a project"
       />
       <button>
-        <FaSearch className="search-icon" onClick={handleSearch} />
+        <CiSearch className="search-icon" size={24} onClick={handleSearch} />
       </button>
     </div>
     // </form>
