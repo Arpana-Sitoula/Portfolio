@@ -43,6 +43,7 @@ const ProjectsSection = ({number}) => {
     }
   }, [number]);
 
+  
  
   const projectList = listedProjects.map((project) => (
     <ProjectCard
@@ -54,7 +55,6 @@ const ProjectsSection = ({number}) => {
       
     />
   ));
-
   return (
     <section className={`projects-section ${theme}`}>
       <div className="projects-section__title">Projects portfolio</div>

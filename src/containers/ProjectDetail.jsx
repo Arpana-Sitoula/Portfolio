@@ -2,11 +2,14 @@ import React from "react";
 import img1 from "../assets/project/ui-planning.jpg";
 
 const ProjectDetail = () => {
+ // console.log({ key }, { projectName });
   return (
     <div>
       <div className="container-grid">
-        <div className="title">Project Title <div className="title_sub"> Jul 26, 2021
-UI / Frontend</div></div>
+        <div className="title">
+          {projectName}
+          <div className="title_sub"> Jul 26, 2021 UI / Frontend</div>
+        </div>
         <div className="div1">
           <img src={img1} width="100%" />
         </div>
@@ -17,18 +20,20 @@ UI / Frontend</div></div>
           <img src={img1} width="100%" />
         </div>
         <div className="div4">
-            <div className="project_type"> <div className="project_type_title">About Project  </div>
-                <div>Name:</div>
-                <div>Service:</div>
-                <div>Link:</div>
-            </div>
-            <div className="project_type"> <div className="project_type_title"> Tools & Technologies  </div>
-                <div>HTML, CSS, ReactJs</div>
-                
-            </div>  
+          <div className="project_type">
+            {" "}
+            <div className="project_type_title">About Project </div>
+            <div>Name:</div>
+            <div>Service:</div>
+            <div>Link:</div>
+          </div>
+          <div className="project_type">
+            {" "}
+            <div className="project_type_title"> Tools & Technologies </div>
+            <div>HTML, CSS, ReactJs</div>
+          </div>
         </div>
         <div className="div5">
-           
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel
           illum asperiores dignissimos cumque quibusdam et fugiat voluptatem
           nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi
