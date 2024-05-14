@@ -39,8 +39,14 @@ const ProjectsSection = ({number}) => {
       projectCategory={project.category}
     />
   ));
+  const onClickHandler = () => {
+    // pathName === '/dashboard/courses'
+    //   ? navigate(`/dashboard/course/${id}`)
+    //   : navigate(`/detail/${id}`, { state: id });
+  };
+
   return (
-    <section className={`projects-section ${theme}`}>
+    <section className={`projects-section ${theme}`} onClick={onClickHandler}>
       <div className="projects-section__title">Projects portfolio</div>
       <div className="projects-section__info">
         Search projects by title or filter by category
