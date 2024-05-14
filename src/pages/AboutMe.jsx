@@ -25,7 +25,7 @@ const AboutMe = () => {
     },
   ];
   return (
-    <div>
+    <div className={`${theme}`}>
       <Navbar />
       <div className={`${theme}`}>
         <div className="aboutus">
@@ -34,12 +34,12 @@ const AboutMe = () => {
           </div>
           <div className="aboutus__desc">
             Hello there! I'm thrilled to have you visit my portfolio website.
-            Let me introduce myself – I am a CSIT graduate from Mechi Multiple Campus in
-            Bhadrapur, Jhapa. Ever since I can remember, I've had an insatiable
-            curiosity for computer science and technology, which eventually led
-            me to pursue this exciting field. However, as I grew older, I
-            discovered a newfound passion for art and design. I delved into
-            photoshop, digital illustration and UI/UX design.
+            Let me introduce myself – I am a CSIT graduate from Mechi Multiple
+            Campus in Bhadrapur, Jhapa. Ever since I can remember, I've had an
+            insatiable curiosity for computer science and technology, which
+            eventually led me to pursue this exciting field. However, as I grew
+            older, I discovered a newfound passion for art and design. I delved
+            into photoshop, digital illustration and UI/UX design.
             <br />
             <br />
             Surprisingly, my interests didn't end there; my exploration of
@@ -69,8 +69,9 @@ const AboutMe = () => {
           ))}
         </div>
       </div>
-
-      <Footer />
+      <div className="home__foot">
+        <Footer />
+      </div>
     </div>
   );
 };

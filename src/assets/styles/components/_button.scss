@@ -16,6 +16,25 @@
       background-color: $--dark-purple;
    }
 }
+.btnmd{
+   width: 150px;
+   text-align: center;
+   background-color: $--purple;
+   border: none;
+   box-sizing: border-box;
+   border-radius: 4px;
+   padding: 10px 20px;
+   color: $--light-primary;
+   font-size: 18px;
+   cursor: pointer;
+   text-align: center;
+   @media (min-width: map-get($breakpoints,medium)) {
+      border-radius: 5px;
+   }
+   &:hover {
+      background-color: $--dark-purple;
+   }
+}
 
 .btnlg{
    width: 180px;

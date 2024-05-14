@@ -89,7 +89,7 @@ const HireMeModel = ({ setHireModel }) => {
         {errors.email?.type === "maxLength" && (
           <p className="err">Please make it little bit short.</p>
         )}
-        <Button title="Send Request" btn="btnlg" />
+        <Button title="Send Request" btn="btnmd" />
         <div className="hireme__closebtn">
           <Button
             title="Close"

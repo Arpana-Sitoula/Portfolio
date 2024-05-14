@@ -20,7 +20,10 @@ const Landing = () => {
             </div>
             <button className="landing__body__btn">
               <div className="dlBtn">
-                <BsArrowDownCircle /> Download CV{" "}
+                <BsArrowDownCircle />
+                <a href={resume} download="Arpana_resume.pdf">
+                  Download CV
+                </a>
               </div>
             </button>
           </div>
@@ -42,9 +45,9 @@ const Landing = () => {
             <div className="lgLanding__body__content__btn">
               <div className="dlBtn">
                 <BsArrowDownCircle />
-                <a href={resume} download="Arpana_resume.pdf">
+                <div><a href={resume} download="Arpana_resume.pdf">
                   Download CV
-                </a>
+                </a></div>
               </div>
             </div>
           </div>

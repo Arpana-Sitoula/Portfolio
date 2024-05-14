@@ -82,7 +82,7 @@ const ContactForm = () => {
         {errors.email?.type === "maxLength" && (
           <p className="err">Message shouldn't be this long..</p>
         )}
-        <Button btn="btnlg" title="Send Request" />
+        <Button btn="btnmd" title="Send Request" />
       </form>
     </div>
   );

@@ -9,14 +9,16 @@ const ContactPage = () => {
   const { theme, setTheme } = useContext(ThemeContext);
 
   return (
-    <div>
+    <div className={`${theme}`}>
       <Navbar />
       <div className={`contact ${theme}`}>
         <ContactForm />
         <Sidedata />
       </div>
-
-      <Footer />
+      <div className={`line${theme}`}></div>
+      <div className="home__foot">
+        <Footer />
+      </div>
     </div>
   );
 };
