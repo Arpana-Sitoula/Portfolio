@@ -5,7 +5,7 @@ import ProjectCard from "../components/resuable/ProjectCard";
 import SearchBox from "../components/resuable/SearchBox";
 import { ThemeContext } from "../context/themeContext";
 
-const ProjectsSection = ({number}) => {
+const ProjectsSection = ({ number }) => {
   const { theme, setTheme } = useContext(ThemeContext);
   const [listedProjects, setListedProjects] = useState(projects);
   const [filter, setFilter] = useState("All Projects");
@@ -14,13 +14,14 @@ const ProjectsSection = ({number}) => {
   const handleSearch = () => {
     if (searchInput !== "") {
       setListedProjects(
-        projects.filter((project) => project.name.toLowerCase().includes(searchInput))
+        projects.filter((project) =>
+          project.name.toLowerCase().includes(searchInput)
+        )
       );
     } else {
       setListedProjects(projects);
     }
-  }
- 
+  };
 
   useEffect(() => {
     if (filter !== "All Projects") {
@@ -32,27 +33,18 @@ const ProjectsSection = ({number}) => {
     }
   }, [filter]);
 
-
-
   useEffect(() => {
     if (number <= 3) {
-      setListedProjects(projects.slice(1,4));
-    }
-    else {
-      setListedProjects(projects.slice(1,7));
+      setListedProjects(projects.slice(1, 4));
+    } else {
+      setListedProjects(projects.slice(1, 7));
     }
   }, [number]);
 
-  
- 
   const projectList = listedProjects.map((project) => (
     <ProjectCard
+      project={project}
       key={project.id}
-      id={project.id}
-      projectImg={project.image}
-      projectName={project.name}
-      projectCategory={project.category}
-      
     />
   ));
   return (
@@ -62,10 +54,13 @@ const ProjectsSection = ({number}) => {
         Search projects by title or filter by category
       </div>
       <div className="projects-section__header">
-        <SearchBox setSearchInput={setSearchInput} handleSearch={handleSearch} />
+        <SearchBox
+          setSearchInput={setSearchInput}
+          handleSearch={handleSearch}
+        />
         <Dropdown projects={projects} filter={filter} setFilter={setFilter} />
       </div>
-      <div className={`projects-section__card-container ${theme}`} >
+      <div className={`projects-section__card-container ${theme}`}>
         {projectList}
       </div>
     </section>

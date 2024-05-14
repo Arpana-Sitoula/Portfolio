@@ -47,6 +47,7 @@
     {
       id: 4,
       image: project4,
+      images: [mayara1, mayara2, mayara3],
       name: "Illustrations",
       category: "Design",
       services: "Graphic Design",

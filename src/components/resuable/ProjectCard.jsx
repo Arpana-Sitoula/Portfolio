@@ -6,7 +6,8 @@ import { useLocation,useNavigate } from 'react-router-dom';
 
 
 
-const ProjectCard = ({ id, projectImg, projectName, projectCategory }) => {
+const ProjectCard = ({project} ) => {
+  const { id, image, name, category } = project;
   const { theme, setTheme } = useContext(ThemeContext);
   const location = useLocation();
   const pathName = location.pathname;
@@ -19,16 +20,15 @@ const ProjectCard = ({ id, projectImg, projectName, projectCategory }) => {
   };
 
   return (
-    <div className="card" onClick={onClickHandler}>
+    <Link className="card" to={`/project/${id}`} state={project}>
       <div className="card__image-container">
-        <img className="card__image" src={projectImg} height={"360px"}/>
-        {console.log({projectImg})}
+        <img className="card__image" src={image} height={"360px"}/>
       </div>
       <div className="card__info-container">
-        <h3 className={`card__project-name${theme}`}>{projectName}</h3>
-        <p className={`card__project-category${theme}`}>{projectCategory}</p>
+        <h3 className={`card__project-name${theme}`}>{name}</h3>
+        <p className={`card__project-category${theme}`}>{category}</p>
       </div>
-    </div>
+    </Link>
   );
 };
 
