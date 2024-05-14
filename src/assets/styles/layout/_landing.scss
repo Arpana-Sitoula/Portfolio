@@ -37,14 +37,21 @@ a {
     }
 }
 .lgLanding {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     @media (max-width: map-get($breakpoints,medium)) {
         display: none;
     }
     &__body {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
         margin-top: 32px;
+        gap: 18rem;
+        @media (max-width: 1600px) {
+           gap: 1rem;
+        }
         &__content {
             margin-right: 6rem;
             padding-left: 3rem;
