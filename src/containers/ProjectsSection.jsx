@@ -9,6 +9,17 @@ const ProjectsSection = ({number}) => {
   const { theme, setTheme } = useContext(ThemeContext);
   const [listedProjects, setListedProjects] = useState(projects);
   const [filter, setFilter] = useState("All Projects");
+  const [searchInput, setSearchInput] = useState("");
+
+  const handleSearch = () => {
+    if (searchInput !== "") {
+      setListedProjects(
+        projects.filter((project) => project.name.toLowerCase().includes(searchInput))
+      );
+    } else {
+      setListedProjects(projects);
+    }
+  }
  
 
   useEffect(() => {
@@ -21,8 +32,9 @@ const ProjectsSection = ({number}) => {
     }
   }, [filter]);
 
+
+
   useEffect(() => {
-    console.log({number})
     if (number <= 3) {
       setListedProjects(projects.slice(1,4));
     }
@@ -46,7 +58,7 @@ const ProjectsSection = ({number}) => {
         Search projects by title or filter by category
       </div>
       <div className="projects-section__header">
-        <SearchBox />
+        <SearchBox setSearchInput={setSearchInput} handleSearch={handleSearch} />
         <Dropdown projects={projects} filter={filter} setFilter={setFilter} />
       </div>
       <div className={`projects-section__card-container ${theme}`}>

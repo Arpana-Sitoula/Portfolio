@@ -2,6 +2,9 @@
   $self: &;
   padding-bottom: 60px;
   padding-top: 26px;
+  max-width: 1280px;
+  margin: auto;
+  padding-inline: 16px;
 
   &__title {
     text-align: center;
@@ -17,17 +20,28 @@
   }
   &__header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     margin-bottom: 3rem;
     height: 36px;
+    gap: 16px;
   }
 
   &__card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(calc(380px), 1fr));
-    gap: 1rem;
-    justify-items: center;
-    margin: 2px 20px 2px 20px;
+    margin-top: 1.5rem;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 2.5rem;
+
+    @media (min-width: 640px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 2.5rem;
+    }
+
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 2.5rem;
+    }
   }
 }

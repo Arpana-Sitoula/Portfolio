@@ -1,14 +1,21 @@
 import React from "react";
+import { FaSearch } from "react-icons/fa";
 
-const SearchBox = () => {
+const SearchBox = ({ setSearchInput, handleSearch }) => {
   return (
-    <form className="search-form">
+    // <form className="search-form">
+    <div className="search-field">
       <input
-        className="search-form__input"
-        type="search"
-        placeholder="Search Projects"
+        className="search-field__input"
+        type="text"
+        onChange={e => setSearchInput(e.target.value)}
+        placeholder="Search a project"
       />
-    </form>
+      <button>
+        <FaSearch className="search-icon" onClick={handleSearch} />
+      </button>
+    </div>
+    // </form>
   );
 };
 
