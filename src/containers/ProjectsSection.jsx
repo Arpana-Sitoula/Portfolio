@@ -43,22 +43,20 @@ const ProjectsSection = ({number}) => {
     }
   }, [number]);
 
+ 
   const projectList = listedProjects.map((project) => (
     <ProjectCard
       key={project.id}
+      id={project.id}
       projectImg={project.image}
       projectName={project.name}
       projectCategory={project.category}
+      
     />
   ));
-  const onClickHandler = () => {
-    // pathName === '/dashboard/courses'
-    //   ? navigate(`/dashboard/course/${id}`)
-    //   : navigate(`/detail/${id}`, { state: id });
-  };
 
   return (
-    <section className={`projects-section ${theme}`} onClick={onClickHandler}>
+    <section className={`projects-section ${theme}`}>
       <div className="projects-section__title">Projects portfolio</div>
       <div className="projects-section__info">
         Search projects by title or filter by category
@@ -67,7 +65,7 @@ const ProjectsSection = ({number}) => {
         <SearchBox setSearchInput={setSearchInput} handleSearch={handleSearch} />
         <Dropdown projects={projects} filter={filter} setFilter={setFilter} />
       </div>
-      <div className={`projects-section__card-container ${theme}`}>
+      <div className={`projects-section__card-container ${theme}`} >
         {projectList}
       </div>
     </section>

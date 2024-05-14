@@ -1,14 +1,25 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { ThemeContext } from "../../context/themeContext";
+import { useLocation,useNavigate } from 'react-router-dom';
 
 
 
-const ProjectCard = ({ projectImg, projectName, projectCategory }) => {
+
+const ProjectCard = ({ id, projectImg, projectName, projectCategory }) => {
   const { theme, setTheme } = useContext(ThemeContext);
+  const location = useLocation();
+  const pathName = location.pathname;
+  const navigate = useNavigate();
+
+  const onClickHandler = () => {
+    console.log("clicked")
+    console.log({id})
+    (navigate(`/project/${id}`), { state: id });
+  };
 
   return (
-    <Link className="card">
+    <div className="card" onClick={onClickHandler}>
       <div className="card__image-container">
         <img className="card__image" src={projectImg} height={"360px"}/>
         {console.log({projectImg})}
@@ -17,7 +28,7 @@ const ProjectCard = ({ projectImg, projectName, projectCategory }) => {
         <h3 className={`card__project-name${theme}`}>{projectName}</h3>
         <p className={`card__project-category${theme}`}>{projectCategory}</p>
       </div>
-    </Link>
+    </div>
   );
 };
 
