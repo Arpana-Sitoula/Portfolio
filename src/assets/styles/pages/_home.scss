@@ -14,3 +14,21 @@
         padding-bottom: 30px;
     }
 }
+//animation
+.animate-pulse{
+    animation: pulse 2s 3s ease-out infinite;
+}
+@keyframes pulse {
+    0%{
+        opacity:1;
+        transform: none;
+    }
+    50%{
+        opacity : 0.9;
+        transform: scale(0.9);
+    }
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+}

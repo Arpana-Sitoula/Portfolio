@@ -35,7 +35,7 @@ const Landing = () => {
       </div>
       <div className="lgLanding">
         <div className="lgLanding__body">
-          <div className="lgLanding__body__content">
+          <div className="lgLanding__body__content animate-fade-out">
             <div className="lgLanding__body__content__head">
               Hi, I am Arpana
             </div>
@@ -51,7 +51,7 @@ const Landing = () => {
               </div>
             </div>
           </div>
-          <div className="lgLanding__body__image">
+          <div className="lgLanding__body__image animate-pop-in">
             {theme == "light" ? (
               <img src={darkDev} width="180%" />
             ) : (

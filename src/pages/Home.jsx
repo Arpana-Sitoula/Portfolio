@@ -20,8 +20,8 @@ const Home = () => {
       <div className="home__project">
         <ProjectsSection number={3}/>
         <Link to="/project">
-          <div className="center-div">
-            <Button title="More Projects" btn="btnlg" />
+          <div className="center-div animate-pulse">
+            <Button title="More Projects"  btn="btnlg" />
           </div>
         </Link>
       </div>
