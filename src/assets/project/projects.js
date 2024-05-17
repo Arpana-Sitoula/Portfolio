@@ -1,19 +1,44 @@
-  import project1 from "./p1.jpg";
-  import project2 from "./p2.jpg";
-  import project3 from "./p2.png";
-  import project4 from "./p4.png";
-  import project5 from "./p6.png";
-  import project6 from "./p7.png";
+  //project1 - bc
+  import project1 from "./Project1.jpg";
+  import bcard1 from "./b card2.jpg";
+  import bcard2 from "./b card3.jpg";
+  import bcard3 from "./b card4.jpg";
+  //project2 - mayara
   import mayara1 from "./mayara1.png";
   import mayara2 from "./mayara2.png";
   import mayara3 from "./mayara3.png";
   import mayara4 from "./mayara4.png";
-
+  //project3 - UIUX
+  import project2 from "./ui-planning.jpg";
+  import ui1 from "./p2.png";
+  import ui2 from "./p6.png";
+ // project4 - fifa
+ import fifa from "./fifa.jpg";
+ import project6 from "./p7.png";
+ import fifa2 from "./web-project.jpg";
+ //project5 - user-rating
+ import project4 from "./p4.png";
+ import user1 from "./active-states.jpg";
+ import user2 from "./desktop-thank-you-state.jpg";
+ //project6 - age calc
+  import project3 from "./p1.jpg";
+  import age2 from "./mobile-design.jpg";
+  import age3 from "./active-states1.jpg";
+//project7 - illustrations
+import illu from "./Illustration.png";
+import illu1 from "./serenity.jpg";
+import illu2 from "./chinese_culture.png";
+import illu3 from "./fashion2.jpg";
+//project8 - Research
+import ai from "./researrch.jpg";
+import ai1 from "./GA.jpg";
+import ai2 from "./GBM.png";
+import ai3 from "./LR.png";
   export const projects = [
     {
       id: 1,
       image: mayara3,
-      images: [mayara1, mayara2, mayara3],
+      images: [mayara1, mayara2, mayara4],
       name: "Mayara HRIS",
       category: "Development",
       services: "Web Development",
@@ -24,8 +49,8 @@
     },
     {
       id: 2,
-      image: mayara3,
-      images: [mayara1, mayara2, mayara3],
+      image: project1,
+      images: [bcard1, bcard2, bcard3],
       name: "Business Cards",
       category: "Design",
       services: "Graphics Designing",
@@ -36,8 +61,8 @@
     
     {
       id: 3,
-      image: project3,
-      images: [mayara1, mayara2, mayara3],
+      image: ai,
+      images: [ai, ai1, ai2],
       name: "Research in AI",
       category: "Artificial Intelligence",
       services: "Machine learning and research",
@@ -49,19 +74,19 @@
     },
     {
       id: 4,
-      image: project4,
-      images: [mayara1, mayara2, mayara3],
+      image: illu,
+      images: [illu1, illu2, illu3],
       name: "Illustrations",
       category: "Design",
       services: "Graphic Design",
       link: "http://admin.mayratechnology.com",
-      description: "I made the series of Illustrations mostly as my hobbies.",
+      description: "I made the series of Illustrations mostly as my hobbies. I like to make it as a project where it represent about the topic in a different way. I have made : Nepal where I have showed the culture, religion, tradition, monuments about it. In anothere project I have made the serenity where I designed the things that I do to get from serenity. Another one is about the fashion. ",
       tools: "Adobe Illustrator"
     },
     {
       id: 5,
-      image: project5,
-      images: [mayara1, mayara2, mayara3],
+      image: project3,
+      images: [project3, age2, age3],
       name: "Age Calculator",
       category: "Development",
       services: "UI/UX desigin, Frontend design",
@@ -71,8 +96,8 @@
     },
     {
       id: 6,
-      image: project6,
-      images: [mayara1, mayara2, mayara3],
+      image: project4,
+      images: [project4, user1, user2],
       name: "User Rating Application",
       category: "Development",
       services: "UI/UX desigin, Frontend design",
@@ -82,8 +107,8 @@
     },
     {
       id: 7,
-      image: project6,
-      images: [mayara1, mayara2, mayara3],
+      image: project2,
+      images: [project2, ui1, ui2],
       name: "UI/UX Ecommerce",
       category: "Design",
       services: "Prototype design, Frontend design",
@@ -94,7 +119,7 @@
     {
       id: 8,
       image: project6,
-      images: [mayara1, mayara2, mayara3],
+      images: [fifa2,project6, fifa],
       name: "FIFA News App",
       category: "Development",
       services: "Web development",

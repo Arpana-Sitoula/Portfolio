@@ -21,7 +21,7 @@ const Landing = () => {
             <button className="landing__body__btn">
               <div className="dlBtn">
                 <BsArrowDownCircle />
-                <a href={resume} download="Arpana_resume.pdf">
+                <a href={resume} download="Arpana_CV.pdf">
                   Download CV
                 </a>
               </div>

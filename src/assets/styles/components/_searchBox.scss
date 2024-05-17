@@ -1,27 +1,15 @@
-  .search-field {
-    display: flex;
-    gap: 4px;
-    &__input {
-      padding: 0.5rem;
-      border-radius: 10px;
-
-
-      &:hover {
-        outline: 2px solid black;
-        outline-offset: -2px;
-      }
-    }
-    button {
-      background-color: #f7f8fc;
-      padding: 10px 16px;
-      cursor: pointer;
-      border: none;
-      border-radius: 10px;
-
-      &:hover {
-        background-color: #f7f8fc;
-
-      }
-    }
+.search-field {
+  display: flex;
+  gap: 4px;
+  color: black;
+  &__input {
+    padding: 0.5rem;
+    border-radius: 10px;
   }
-
+  button {
+    padding: 10px 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+  }
+}
