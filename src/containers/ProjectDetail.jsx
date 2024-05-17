@@ -3,6 +3,8 @@ import { Link, useLocation } from "react-router-dom";
 import { ThemeContext } from "../context/themeContext";
 import Navbar from "../components/shared/Navbar";
 import Footer from "../components/shared/Footer";
+import { IoTimeOutline } from "react-icons/io5";
+import { BsTags } from "react-icons/bs";
 
 const ProjectDetail = () => {
   const location = useLocation();
@@ -16,7 +18,16 @@ const ProjectDetail = () => {
       <div className="container-grid">
         <div className="title">
           {project.name}
-          <div className="title_sub"> Jul 26, 2021 UI / Frontend</div>
+          <div className="title_sub">
+            <div className="icons">
+              <IoTimeOutline size={20}/>
+              Jul 26, 2021
+            </div>{" "}
+            <div className="icons">
+              <BsTags size={20}/>
+              UI / Frontend
+            </div>{" "}
+          </div>
         </div>
         <div className="div1">
           <img
@@ -51,7 +62,9 @@ const ProjectDetail = () => {
             <div>
               Link:{" "}
               {project.file ? (
-                <a href={project.file} download={project.file}>{project.name}</a>
+                <a href={project.file} download={project.file}>
+                  {project.name}
+                </a>
               ) : (
                 <a href={project.link} target="_blank">
                   {project.name}
