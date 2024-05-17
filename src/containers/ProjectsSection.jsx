@@ -35,9 +35,9 @@ const ProjectsSection = ({ number }) => {
 
   useEffect(() => {
     if (number <= 3) {
-      setListedProjects(projects.slice(1, 4));
+      setListedProjects(projects.slice(0, 3));
     } else {
-      setListedProjects(projects.slice(1, 7));
+      setListedProjects(projects.slice(0, 9));
     }
   }, [number]);
 

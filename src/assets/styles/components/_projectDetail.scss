@@ -21,12 +21,15 @@
 }
 .div1 {
     grid-area: 2/ 2 / 4 / 5;
+    align-content: center;
 }
 .div2 {
     grid-area: 2/ 5 / 4 / 8;
+    align-content: center;
 }
 .div3 {
     grid-area: 2 / 8 / 4 / 11;
+    align-content: center;
 }
 .div4 {
     grid-area: 4/ 2 / 7/ 5;
@@ -46,4 +49,8 @@
         margin-bottom: 2px;
     }
 }
+.images {
+    object-fit: cover;
+    border-radius: 12px;
+  }
 

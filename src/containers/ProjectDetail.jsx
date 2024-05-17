@@ -14,13 +14,13 @@ const ProjectDetail = () => {
           <div className="title_sub"> Jul 26, 2021 UI / Frontend</div>
         </div>
         <div className="div1">
-          <img src={project.images[0]} width="100%" />
+          <img src={project.images[0]}  height={"360px"} width={"400px"}  className="images"/>
         </div>
         <div className="div2">
-          <img src={project.images[1]} width="100%" />
+          <img src={project.images[1]} height={"360px"} width={"400px"}  className="images" />
         </div>
         <div className="div3">
-          <img src={project.images[2]} width="100%" />
+          <img src={project.images[2]} height={"360px"} width={"400px"}  className="images"/>
         </div>
         <div className="div4">
           <div className="project_type">
