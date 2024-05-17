@@ -1,13 +1,18 @@
-import React from "react";
-import img1 from "../assets/project/ui-planning.jpg";
+import React, { useContext } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { ThemeContext } from "../context/themeContext";
+import Navbar from "../components/shared/Navbar";
+import Footer from "../components/shared/Footer";
 
 const ProjectDetail = () => {
   const location = useLocation();
   const project = location.state;
-  console.log({ project });
+
+  const { theme, setTheme } = useContext(ThemeContext);
+
   return (
-    <div>
+    <div className={`${theme}`}>
+      <Navbar />
       <div className="container-grid">
         <div className="title">
           {project.name}
@@ -32,13 +37,16 @@ const ProjectDetail = () => {
               Link: <Link to={project.link}>{project.link}</Link>{" "}
             </div>
           </div>
-          <div className="project_type">
+          <div className="project_type tools-used">
             {" "}
             <div className="project_type_title"> Tools & Technologies </div>
             <div>{project.tools}</div>
           </div>
         </div>
         <div className="div5">{project.description}</div>
+      </div>
+      <div className="home__foot">
+        <Footer />
       </div>
     </div>
   );
