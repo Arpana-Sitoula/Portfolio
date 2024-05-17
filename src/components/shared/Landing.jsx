@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import darkDev from "../../assets/darkDev.svg";
 import lightDev from "../../assets/lightDev.svg";
 import { BsArrowDownCircle } from "react-icons/bs";
-import resume from "../../assets/Arpana_resume.pdf";
+import resume from "../../assets/Arpana_CV.pdf";
 import { ThemeContext } from "../../context/themeContext";
 
 const Landing = () => {
@@ -45,7 +45,7 @@ const Landing = () => {
             <div className="lgLanding__body__content__btn">
               <div className="dlBtn">
                 <BsArrowDownCircle />
-                <div><a href={resume} download="Arpana_resume.pdf">
+                <div><a href={resume} download="Arpana_CV.pdf">
                   Download CV
                 </a></div>
               </div>

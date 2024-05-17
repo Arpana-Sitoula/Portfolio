@@ -69,6 +69,7 @@ const AboutMe = () => {
           ))}
         </div>
       </div>
+      <div className={`line${theme}`}></div>
       <div className="home__foot">
         <Footer />
       </div>

@@ -20,7 +20,7 @@ const ProjectCard = ({project} ) => {
   };
 
   return (
-    <Link className="card" to={`/project/${id}`} state={project}>
+    <Link className={`card i${theme}`} to={`/project/${id}`} state={project}>
       <div className="card__image-container">
         <img className="card__image" src={image} height={"360px"}/>
       </div>

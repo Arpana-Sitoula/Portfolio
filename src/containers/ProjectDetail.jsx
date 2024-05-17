@@ -19,22 +19,44 @@ const ProjectDetail = () => {
           <div className="title_sub"> Jul 26, 2021 UI / Frontend</div>
         </div>
         <div className="div1">
-          <img src={project.images[0]}  height={"360px"} width={"400px"}  className="images"/>
+          <img
+            src={project.images[0]}
+            height={"360px"}
+            width={"400px"}
+            className="images"
+          />
         </div>
         <div className="div2">
-          <img src={project.images[1]} height={"360px"} width={"400px"}  className="images" />
+          <img
+            src={project.images[1]}
+            height={"360px"}
+            width={"400px"}
+            className="images"
+          />
         </div>
         <div className="div3">
-          <img src={project.images[2]} height={"360px"} width={"400px"}  className="images"/>
+          <img
+            src={project.images[2]}
+            height={"360px"}
+            width={"400px"}
+            className="images"
+          />
         </div>
         <div className="div4">
           <div className="project_type">
             {" "}
             <div className="project_type_title">About Project </div>
             <div>Name: {project.name}</div>
-            <div>Service: {project.service}</div>
+            <div>Service: {project.services}</div>
             <div>
-              Link: <Link to={project.link}>{project.link}</Link>{" "}
+              Link:{" "}
+              {project.file ? (
+                <a href={project.file} download={project.file}>{project.name}</a>
+              ) : (
+                <a href={project.link} target="_blank">
+                  {project.name}
+                </a>
+              )}
             </div>
           </div>
           <div className="project_type tools-used">
@@ -45,6 +67,7 @@ const ProjectDetail = () => {
         </div>
         <div className="div5">{project.description}</div>
       </div>
+      <div className={`line${theme}`}></div>
       <div className="home__foot">
         <Footer />
       </div>

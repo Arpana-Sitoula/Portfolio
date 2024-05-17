@@ -34,6 +34,8 @@ import ai from "./researrch.jpg";
 import ai1 from "./GA.jpg";
 import ai2 from "./GBM.png";
 import ai3 from "./LR.png";
+//file
+import research from "../../assets/Research Project.pdf";
   export const projects = [
     {
       id: 1,
@@ -54,7 +56,7 @@ import ai3 from "./LR.png";
       name: "Business Cards",
       category: "Design",
       services: "Graphics Designing",
-      link: "link",
+      link: "https://shorturl.at/wMQVz",
       description: "This project shows my graphic design skills through creating stylish and simple business cards. I started it as practice, but it turned into a real project, showing how useful the designs are. My main goal was to design business cards from scratch, including making the logos and arranging everything on the card. I focused on a clean and elegant look, using straight lines, lots of empty space, and carefully chosen fonts.\n\nI made each logo specifically for the business it represents. I used Adobe Illustrator for the design work to ensure high quality, and Adobe Photoshop to make realistic previews of the cards. I created two different card samples to show how the designs can fit various business needs. The simple and stylish design makes the cards look professional and appealing without being too flashy.\n\nWhat started as practice became useful for real businesses, proving the designs work well in the real world. In the future, I plan to create more card designs for different industries and add features like QR codes or augmented reality to make the cards more interactive. This project not only shows my graphic design skills but also my ability to turn ideas into real, usable products.",
       tools: "Adobe Photoshop, Adobe Illustrator"
     },
@@ -66,7 +68,7 @@ import ai3 from "./LR.png";
       name: "Research in AI",
       category: "Artificial Intelligence",
       services: "Machine learning and research",
-      link: "http://admin.mayratechnology.com",
+      file: research,
       description: `This project is a research study focusing on the comparative analysis of different machine learning algorithms applied to credit card fraud detection. Using datasets from Kaggle, which were divided into three separate subsets, we compared the performance of various machine learning algorithms. Specifically, we evaluated logistic regression and gradient boosting algorithms. \n\n
       To enhance the effectiveness of the gradient boosting algorithm, we employed hyperparameter tuning using a genetic algorithm. This process allowed us to optimize the model's parameters for better performance. Additionally, we used bar graphs to visualize and compare the results of our analyses.\n\n
       This project was conducted as part of a college research initiative, driven by a desire to explore the practical applications of machine learning in fraud detection. The findings and methodologies were compiled into a comprehensive report, highlighting the strengths and weaknesses of each algorithm. The research not only provided valuable insights into fraud detection but also honed our skills in machine learning and data analysis.`,
@@ -79,8 +81,8 @@ import ai3 from "./LR.png";
       name: "Illustrations",
       category: "Design",
       services: "Graphic Design",
-      link: "http://admin.mayratechnology.com",
-      description: "I made the series of Illustrations mostly as my hobbies. I like to make it as a project where it represent about the topic in a different way. I have made : Nepal where I have showed the culture, religion, tradition, monuments about it. In anothere project I have made the serenity where I designed the things that I do to get from serenity. Another one is about the fashion. ",
+      link: "https://www.behance.net/musibirali/projects",
+      description: "I created this series of illustrations mostly as a hobby. I like to treat it as a project that represents different topics in unique ways. For example, I made one about Nepal, showcasing its culture, religion, traditions, and monuments. In another project, I depicted serenity by illustrating the things that bring me peace. I also created one focused on fashion.",
       tools: "Adobe Illustrator"
     },
     {
@@ -90,8 +92,8 @@ import ai3 from "./LR.png";
       name: "Age Calculator",
       category: "Development",
       services: "UI/UX desigin, Frontend design",
-      link: "http://admin.mayratechnology.com",
-      description: "It is simple age calculator application where we can calculate our age in year, month and days. It has capacity of handling errors using form validation.",
+      link: "https://github.com/Arpana-Sitoula/age-calculator",
+      description: "It is a simple age calculator application where you can calculate your age in years, months, and days. It includes error handling through form validation.",
       tools: "React, SCSS"
     },
     {
@@ -101,8 +103,8 @@ import ai3 from "./LR.png";
       name: "User Rating Application",
       category: "Development",
       services: "UI/UX desigin, Frontend design",
-      link: "http://admin.mayratechnology.com",
-      description: "User rating feature is not new but also not so uncommon. It is everywhere from ecommerce to live streamings. User rating is important from the perspective of company as well as user as it help organization to improve and other users to know about it. However, the less attention has been paid while designing it. I have encountered bad user interface and expereince many times which is the reason why many user don't want to do rating. Here I designed and develop the interactive user rating application along with the feedback to the user. It is simple with attractive colors. It can be used as a pop in application as a resuable component ",
+      link: "https://github.com/Arpana-Sitoula/user-rating",
+      description: "The user rating feature is not new but also not uncommon. It is found everywhere, from e-commerce to live streaming platforms. User ratings are important for both companies and users, as they help organizations improve and inform other users about the quality of products or services. However, the design of these features often receives little attention. I have encountered poor user interfaces and experiences many times, which is why many users are reluctant to leave ratings. To address this, I designed and developed an interactive user rating application that includes feedback for the user. It is simple, uses attractive colors, and can be implemented as a reusable pop-in component.",
       tools: "React, SCSS"
     },
     {
@@ -113,7 +115,7 @@ import ai3 from "./LR.png";
       category: "Design",
       services: "Prototype design, Frontend design",
       link: "http://admin.mayratechnology.com",
-      description: "It is UI/UX prototype design as my model for the agro based company named- Matodotcom. The company promote to sell the tools and items require for agiculture. As agriculture being the integral part of our daily life, promoting ecommerce for these company will be very beneficial for farmers. In this , we have categorized products on the basis of chemical fertilizers, tools, pestisides and seeds. In the market, farmers has to buy on the bulk but here they can get in the amoun they are looking for. In near future, we are also thinking to add the section where farmers can purchase tools in a loan for certain amount of time. As the tool they need will only be used for few days and doing so will help minimize their cost. ",
+      description: "It is UI/UX prototype design as my model for the agro based company named- Matodotcom. The company promote to sell the tools and items require for agiculture. As agriculture being the integral part of our daily life, promoting ecommerce for these company will be very beneficial for farmers. In this , we have categorized products on the basis of chemical fertilizers, tools, pestisides and seeds. In the market, farmers has to buy on the bulk but here they can get in the amoun they are looking for. In near future, we are also thinking to add the section where farmers can purchase tools in a loan for certain amount of time. As the tool they need will only be used for few days and doing so will help minimize their cost.",
       tools: "Adobe XD, HTML, CSS"
     },
     {
@@ -123,8 +125,8 @@ import ai3 from "./LR.png";
       name: "FIFA News App",
       category: "Development",
       services: "Web development",
-      link: "lhttp://admin.mayratechnology.comink",
-      description: "This is the news web application exclusively for sports lover who wish to remain updated with latest news. I made this project during fifa world cup event when the whole world was going crazy about it. It was initially planned not only for news but also for the live score of match and upcoming fixtures and live comment from the user. However all the fuctionality has not been added in this version. It is yet to complete in near future.",
+      link: "https://github.com/Arpana-Sitoula/FIFA-Updates",
+      description: "This is a news web application designed exclusively for sports lovers who wish to stay updated with the latest news. I created this project during the FIFA World Cup, a time when the whole world was going crazy about it. The initial plan was to include not only news but also live scores, upcoming fixtures, and live comments from users. However, not all functionalities have been added in this version. The project is still a work in progress and will be completed in the near future.",
       tools: "React, CSS"
     }
   ];
