@@ -71,6 +71,10 @@
     margin-bottom: 2px;
   }
 }
+.images {
+    object-fit: cover;
+    border-radius: 12px;
+  }
 
 .project_type.tools-used {
   margin-bottom: 0;
