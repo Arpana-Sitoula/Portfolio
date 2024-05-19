@@ -40,6 +40,7 @@ import research from "../../assets/Research Project.pdf";
     {
       id: 1,
       image: mayara3,
+      date: "2024-04-01",
       images: [mayara1, mayara2, mayara4],
       name: "Mayara HRIS",
       category: "Development",
@@ -52,6 +53,7 @@ import research from "../../assets/Research Project.pdf";
     {
       id: 2,
       image: project1,
+      date: "2021-07-29",
       images: [bcard1, bcard2, bcard3],
       name: "Business Cards",
       category: "Design",
@@ -64,6 +66,7 @@ import research from "../../assets/Research Project.pdf";
     {
       id: 3,
       image: ai,
+      date: "2023-4-26",
       images: [ai, ai1, ai2],
       name: "Research in AI",
       category: "Artificial Intelligence",
@@ -77,6 +80,7 @@ import research from "../../assets/Research Project.pdf";
     {
       id: 4,
       image: illu,
+      date: "2023-01-23",
       images: [illu1, illu2, illu3],
       name: "Illustrations",
       category: "Design",
@@ -88,6 +92,7 @@ import research from "../../assets/Research Project.pdf";
     {
       id: 5,
       image: project3,
+      date: "2023-05-10",
       images: [project3, age2, age3],
       name: "Age Calculator",
       category: "Development",
@@ -99,6 +104,7 @@ import research from "../../assets/Research Project.pdf";
     {
       id: 6,
       image: project4,
+      date: "2023-05-06",
       images: [project4, user1, user2],
       name: "User Rating Application",
       category: "Development",
@@ -110,6 +116,7 @@ import research from "../../assets/Research Project.pdf";
     {
       id: 7,
       image: project2,
+      date: "2022-11-28",
       images: [project2, ui1, ui2],
       name: "UI/UX Ecommerce",
       category: "Design",
@@ -121,6 +128,7 @@ import research from "../../assets/Research Project.pdf";
     {
       id: 8,
       image: project6,
+      date: "2023-01-01",
       images: [fifa2,project6, fifa],
       name: "FIFA News App",
       category: "Development",

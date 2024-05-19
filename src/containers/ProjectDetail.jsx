@@ -21,11 +21,11 @@ const ProjectDetail = () => {
           <div className="title_sub">
             <div className="icons">
               <IoTimeOutline size={20}/>
-              Jul 26, 2021
+              {project.date}
             </div>{" "}
             <div className="icons">
               <BsTags size={20}/>
-              UI / Frontend
+              {project.services}
             </div>{" "}
           </div>
         </div>
