@@ -1,0 +1,50 @@
+.card {
+  $self: &;
+  // width: 400px;
+  display: inline-block;
+  padding-bottom: 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  -webkit-box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  //border: 1px solid #bdbdbf;
+  transition: 1s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &__image-container {
+    #{ $self }__image {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__info-container {
+    #{ $self }__project-name {
+      font-size: 24px;
+      padding: 12px;
+      &dark {
+        color: $--light-primary;
+      }
+      &light {
+        color: $--dark-primary;
+      }
+    }
+
+    #{ $self }__project-category {
+      font-size: 18px;
+      padding: 12px;
+      &dark {
+        color: $--light-secondary;
+      }
+      &light {
+        color: $--dark-secondary;
+      }
+    }
+  }
+}

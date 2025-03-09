@@ -1,0 +1,15 @@
+.search-field {
+  display: flex;
+  gap: 4px;
+  color: black;
+  &__input {
+    padding: 0.5rem;
+    border-radius: 10px;
+  }
+  button {
+    padding: 10px 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+  }
+}

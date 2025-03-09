@@ -1,0 +1,76 @@
+.btn {
+   width: 100px;
+   background-color: $--purple;
+   border: none;
+   box-sizing: border-box;
+   border-radius: 3px;
+   padding: 9px 18px;
+   color: $--light-primary;
+   font-size: 16px;
+   cursor: pointer;
+   text-align: center;
+   @media (min-width: map-get($breakpoints,medium)) {
+      border-radius: 5px;
+   }
+   &:hover {
+      background-color: $--dark-purple;
+   }
+}
+.btnmd{
+   width: 150px;
+   text-align: center;
+   background-color: $--purple;
+   border: none;
+   box-sizing: border-box;
+   border-radius: 4px;
+   padding: 10px 20px;
+   color: $--light-primary;
+   font-size: 18px;
+   cursor: pointer;
+   text-align: center;
+   @media (min-width: map-get($breakpoints,medium)) {
+      border-radius: 5px;
+   }
+   &:hover {
+      background-color: $--dark-purple;
+   }
+}
+
+.btnlg{
+   width: 180px;
+   text-align: center;
+   background-color: $--purple;
+   border: none;
+   box-sizing: border-box;
+   border-radius: 6px;
+   padding: 12px 22px;
+   color: $--light-primary;
+   font-size: 22px;
+   cursor: pointer;
+   text-align: center;
+   @media (min-width: map-get($breakpoints,medium)) {
+      border-radius: 5px;
+   }
+   &:hover {
+      background-color: $--dark-purple;
+   }
+}
+.closebtn{
+   width: 80px;
+   text-align: center;
+   background-color: #4b5563;
+   border: none;
+   box-sizing: border-box;
+   border-radius: 6px;
+   padding: 9px 18px;
+   color: $--light-primary;
+   font-size: 16px;
+   cursor: pointer;
+   text-align: center;
+   @media (min-width: map-get($breakpoints,medium)) {
+      border-radius: 5px;
+   }
+   &:hover {
+      background-color: #232d3c;
+   }
+}
