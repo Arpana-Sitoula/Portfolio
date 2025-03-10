@@ -3,6 +3,19 @@
   import bcard1 from "./b card2.jpg";
   import bcard2 from "./b card3.jpg";
   import bcard3 from "./b card4.jpg";
+  //project2 - climate chnage
+  import climate from "./Climate_change.png"
+  import cc1 from "./cc1.png"
+  import cc2 from "./cc2.png"
+  import cc3 from "./cc3.png"
+  //project3 - auction system
+  import auction from "./auction.png"
+  import auc1 from "./auc1.png"
+  import auc2 from "./auc2.png"
+  //project4 - spotify
+  import spotify from "./spotify.png"
+  import sp1 from "./sp1.png"
+  import sp2 from "./sp2.png"
   //project2 - mayara
   import mayara1 from "./mayara1.png";
   import mayara2 from "./mayara2.png";
@@ -36,6 +49,7 @@ import ai2 from "./GBM.png";
 import ai3 from "./LR.png";
 //file
 import research from "../../assets/Research Project.pdf";
+import spotify_research from "../../assets/Spotify music analysis.pdf";
   export const projects = [
     {
       id: 1,
@@ -52,6 +66,45 @@ import research from "../../assets/Research Project.pdf";
     },
     {
       id: 2,
+      image: climate,
+      date: "2025-02-01",
+      images: [cc1, cc2, cc3],
+      name: "Climate Change Tracker Dashbaord",
+      category: "Data Science",
+      services: "Dashboard",
+      link: "https://climate-change-tracker-dashboard.streamlit.app/",
+      description: "Climate Change Tracker Dashboard is an interactive tool designed to visualize and analyze the key contributors to global warming. It brings together data on CO₂ emissions, global temperature rise, energy consumption patterns, and deforestation trends, allowing users to explore how these factors have evolved over time. The dashboard enables comparisons between countries, helping to identify major contributors and trends in sustainability efforts. By making climate data accessible and engaging, my goal is to raise awareness and encourage informed discussions on the urgent need for climate action.",
+      tools: "Python (Numpy, Pandas, Plotly), Streamlit, NASA data, Our world in data"
+
+    },
+    {
+      id: 3,
+      image: auction,
+      date: "2025-01-12",
+      images: [auc1, auction, auc2],
+      name: "Secure Auction System",
+      category: "Data Science",
+      services: "Security",
+      link: "https://oblivioustransfer.streamlit.app/",
+      description: "This system ensures private, tamper-proof bidding using Diffie-Hellman encryption and AES-256 to protect bids. Inspired by Oblivious Transfer (OT) principles, only the winner’s bid is revealed, keeping others secret. Built with Streamlit for simplicity, it combines cryptographic security with an intuitive interface for fair, transparent auctions. Bid confidently—your privacy is encrypted. ",
+      tools: "Python, Streamlit"
+
+    },
+    {
+      id: 4,
+      image: spotify,
+      date: "2025-03-01",
+      images: [sp1, spotify, sp2],
+      name: "Spotify Music Analysis",
+      category: "Data Science",
+      services: "Research and Analysis",
+      file: spotify_research,
+      description: "This project decodes how audio features and genres drive track popularity on Spotify. Using statistical analysis (regression, ANOVA, t-tests) on 28,000+ tracks, I identified trends: modern music (2000s) is louder, faster, and more energetic, while Pop and Rap dominate in popularity. Features like danceability boost engagement, while instrumental tracks lag. Combining data science rigor with cultural insights, the work offers actionable takeaways for creators and platforms, bridging art and analytics in the streaming era.",
+      tools: "Python/R, Statistical Modeling, Spotify Datasets"
+
+    },
+    {
+      id: 5,
       image: project1,
       date: "2021-07-29",
       images: [bcard1, bcard2, bcard3],
@@ -59,17 +112,17 @@ import research from "../../assets/Research Project.pdf";
       category: "Design",
       services: "Graphics Designing",
       link: "https://shorturl.at/wMQVz",
-      description: "This project shows my graphic design skills through creating stylish and simple business cards. I started it as practice, but it turned into a real project, showing how useful the designs are. My main goal was to design business cards from scratch, including making the logos and arranging everything on the card. I focused on a clean and elegant look, using straight lines, lots of empty space, and carefully chosen fonts.\n\nI made each logo specifically for the business it represents. I used Adobe Illustrator for the design work to ensure high quality, and Adobe Photoshop to make realistic previews of the cards. I created two different card samples to show how the designs can fit various business needs. The simple and stylish design makes the cards look professional and appealing without being too flashy.\n\nWhat started as practice became useful for real businesses, proving the designs work well in the real world. In the future, I plan to create more card designs for different industries and add features like QR codes or augmented reality to make the cards more interactive. This project not only shows my graphic design skills but also my ability to turn ideas into real, usable products.",
+      description: "This project shows my graphic design skills through creating stylish and simple business cards. I started it as practice, but it turned into a real project, showing how useful the designs are. My main goal was to design business cards from scratch, including making the logos and arranging everything on the card. I focused on a clean and elegant look, using straight lines, lots of empty space, and carefully chosen fonts.\n\nI made each logo specifically for the business it represents. I used Adobe Illustrator for the design work to ensure high quality, and Adobe Photoshop to make realistic previews of the cards. I created two different card samples to show how the designs can fit various business needs. The simple and stylish design makes the cards look professional and appealing without being too flashy.\n\nWhat started as practice became useful for real businesses, proving the designs work well in the real world. In the future, I HTML, Tailwind CSS, Shadcn, ReactJs, Reduxplan to create more card designs for different industries and add features like QR codes or augmented reality to make the cards more interactive. This project not only shows my graphic design skills but also my ability to turn ideas into real, usable products.",
       tools: "Adobe Photoshop, Adobe Illustrator"
     },
     
     {
-      id: 3,
+      id: 6,
       image: ai,
       date: "2023-4-26",
       images: [ai, ai1, ai2],
       name: "Research in AI",
-      category: "Artificial Intelligence",
+      category: "Data Science",
       services: "Machine learning and research",
       file: research,
       description: `This project is a research study focusing on the comparative analysis of different machine learning algorithms applied to credit card fraud detection. Using datasets from Kaggle, which were divided into three separate subsets, we compared the performance of various machine learning algorithms. Specifically, we evaluated logistic regression and gradient boosting algorithms. \n\n
@@ -78,7 +131,7 @@ import research from "../../assets/Research Project.pdf";
       tools: "Python, Pandas, Numpy, Scikit Learn"
     },
     {
-      id: 4,
+      id: 7,
       image: illu,
       date: "2023-01-23",
       images: [illu1, illu2, illu3],
@@ -90,7 +143,7 @@ import research from "../../assets/Research Project.pdf";
       tools: "Adobe Illustrator"
     },
     {
-      id: 5,
+      id: 8,
       image: project3,
       date: "2023-05-10",
       images: [project3, age2, age3],
@@ -102,7 +155,7 @@ import research from "../../assets/Research Project.pdf";
       tools: "React, SCSS"
     },
     {
-      id: 6,
+      id: 9,
       image: project4,
       date: "2023-05-06",
       images: [project4, user1, user2],
@@ -114,7 +167,7 @@ import research from "../../assets/Research Project.pdf";
       tools: "React, SCSS"
     },
     {
-      id: 7,
+      id: 10,
       image: project2,
       date: "2022-11-28",
       images: [project2, ui1, ui2],
@@ -126,7 +179,7 @@ import research from "../../assets/Research Project.pdf";
       tools: "Adobe XD, HTML, CSS"
     },
     {
-      id: 8,
+      id: 11,
       image: project6,
       date: "2023-01-01",
       images: [fifa2,project6, fifa],

@@ -68,9 +68,10 @@ a{
 }
 .div5 {
   grid-area: 4 / 5 / 7 / 11;
-
+  text-align: justify;
   @media (max-width: 768px) {
     grid-area: 10/ 2 / 12 / 11;
+    text-align: justify;
   }
 }
 

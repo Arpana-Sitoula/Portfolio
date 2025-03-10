@@ -16,7 +16,11 @@ const Landing = () => {
           <div className="landing__body">
             <div className="landing__body__head">Hi, I am Arpana</div>
             <div className="landing__body__info">
+<<<<<<< HEAD
               A frontend developer, designer & machine learning enthusiast
+=======
+            Aspiring Data Scientist, Machine Learning Enthusiast & Designer
+>>>>>>> bd4ec73 (portfolio updated)
             </div>
             <button className="landing__body__btn">
               <div className="dlBtn">
@@ -40,7 +44,11 @@ const Landing = () => {
               Hi, I am Arpana
             </div>
             <div className={`lgLanding__body__content__info ${theme}Txt`}>
+<<<<<<< HEAD
               A frontend developer, designer & machine learning enthusiast
+=======
+            Aspiring Data Scientist, Machine Learning Enthusiast & Designer
+>>>>>>> bd4ec73 (portfolio updated)
             </div>
             <div className="lgLanding__body__content__btn">
               <div className="dlBtn">

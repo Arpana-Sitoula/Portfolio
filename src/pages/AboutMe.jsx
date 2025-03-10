@@ -6,68 +6,25 @@ import { ThemeContext } from "../context/themeContext";
 const AboutMe = () => {
   const { theme, setTheme } = useContext(ThemeContext);
 
-  const stats = [
-    {
-      number: "2+",
-      type: "Years of experience",
-    },
-    {
-      number: "120+",
-      type: "Appreciations on Behance",
-    },
-    {
-      number: "92%",
-      type: "Positive feedback",
-    },
-    {
-      number: "85%",
-      type: "Project completed",
-    },
-  ];
   return (
     <div className={`${theme}`}>
       <Navbar />
       <div className={`${theme}`}>
         <div className="aboutus">
           <div className="aboutus__img">
-            <img src={avatar} height={"300px"} width={"300px"} />
+            <img src={avatar} height={"500px"} width={"500px"} />
           </div>
           <div className="aboutus__desc">
-            Hello there! I'm thrilled to have you visit my portfolio website.
-            Let me introduce myself – I am a CSIT graduate from Mechi Multiple
-            Campus in Bhadrapur, Jhapa. Ever since I can remember, I've had an
-            insatiable curiosity for computer science and technology, which
-            eventually led me to pursue this exciting field. However, as I grew
-            older, I discovered a newfound passion for art and design. I delved
-            into photoshop, digital illustration and UI/UX design.
+            My journey started in software development, where I worked with JavaScript for 1.5 years. Over time, I found myself drawn more toward data and the insights it can uncover. That curiosity led me to pursue a master’s in Data Science at Hochschule Fulda, where I’m exploring machine learning, analytics, and how data can be used to solve real-world problems.
             <br />
             <br />
-            Surprisingly, my interests didn't end there; my exploration of
-            coding piqued my curiosity, and I decided to venture into the realm
-            of frontend development. I honed my skills in JavaScript, CSS, and
-            ReactJS, and there's nothing quite like the satisfaction of crafting
-            websites with custom CSS. I also have a strong inclination towards
-            data and machine learning. I found myself quickly adapting to the
-            world of data.
+            Beyond academics and work, I care deeply about the world around me. Climate change is something that weighs on my mind, and I often find myself thinking about ways to contribute to a more sustainable future. It’s a path I hope to be a part of, in whatever way I can.
             <br />
             <br />
-            Beyond the realm of programming, my love for movies and books knows
-            no bounds. One of my all-time favorite films is "The Sixth Sense" .
-            When I'm not absorbed in the world of technology or entertainment,
-            you can often find me spending time with animals, as I'm a proud
-            vegetarian and a fervent animal lover. I genuinely wish to make a
-            positive impact on the environment and contribute to creating a
-            better world for all living beings – both plants and animals.
+            I also have a deep love for animals and follow a vegan lifestyle. My home is shared with two cats and a dog, and I’m lucky to have a family that supports and shares my values. In my free time, I find comfort in painting—it’s a quiet space where I can slow down and express myself in a different way.
           </div>
         </div>
-        <div className={`stats${theme}`}>
-          {stats.map((my) => (
-            <div className="mystats">
-              <div className="mystats__number">{my.number}</div>
-              <div className="mystats__type">{my.type}</div>
-            </div>
-          ))}
-        </div>
+        
       </div>
       <div className={`line${theme}`}></div>
       <div className="home__foot">
