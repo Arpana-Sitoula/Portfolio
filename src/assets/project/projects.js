@@ -47,9 +47,15 @@ import ai from "./researrch.jpg";
 import ai1 from "./GA.jpg";
 import ai2 from "./GBM.png";
 import ai3 from "./LR.png";
+//project9 - PowerBi
+import pb1 from "./pb1.png"
+import pb2 from "./pb2.png"
+import pb3 from "./pb3.png"
+
 //file
 import research from "../../assets/Research Project.pdf";
 import spotify_research from "../../assets/Spotify music analysis.pdf";
+import pizza_report from "../../assets/pizza query report.pdf";
   export const projects = [
     {
       id: 1,
@@ -115,9 +121,20 @@ import spotify_research from "../../assets/Spotify music analysis.pdf";
       description: "This project shows my graphic design skills through creating stylish and simple business cards. I started it as practice, but it turned into a real project, showing how useful the designs are. My main goal was to design business cards from scratch, including making the logos and arranging everything on the card. I focused on a clean and elegant look, using straight lines, lots of empty space, and carefully chosen fonts.\n\nI made each logo specifically for the business it represents. I used Adobe Illustrator for the design work to ensure high quality, and Adobe Photoshop to make realistic previews of the cards. I created two different card samples to show how the designs can fit various business needs. The simple and stylish design makes the cards look professional and appealing without being too flashy.\n\nWhat started as practice became useful for real businesses, proving the designs work well in the real world. In the future, I HTML, Tailwind CSS, Shadcn, ReactJs, Reduxplan to create more card designs for different industries and add features like QR codes or augmented reality to make the cards more interactive. This project not only shows my graphic design skills but also my ability to turn ideas into real, usable products.",
       tools: "Adobe Photoshop, Adobe Illustrator"
     },
-    
     {
       id: 6,
+      image: pb3,
+      date: "2025-03-16",
+      images: [pb1, pb2, pb3],
+      name: "Pizza Sales Report",
+      category: "Data Science",
+      services: "Business Intelligence",
+      file: pizza_report,
+      description: "This Power BI report provides an in-depth analysis of pizza sales in 2015. The data was first extracted using SQL queries, then processed and validated through Power Query for accuracy. The dashboard includes key performance indicators (KPIs) and various visualizations to highlight important insights, such as:\n\n- The top-performing pizza in terms of revenue, sales, and orders.\n- The least popular pizza based on sales performance.\n- The best and worst days and months for pizza sales.\n\nThis report helps identify sales trends and optimize strategies for future improvements.",      
+      tools: "PowerBI, SQL, SQL Management Studio"
+    },
+    {
+      id: 7,
       image: ai,
       date: "2023-4-26",
       images: [ai, ai1, ai2],
@@ -131,7 +148,7 @@ import spotify_research from "../../assets/Spotify music analysis.pdf";
       tools: "Python, Pandas, Numpy, Scikit Learn"
     },
     {
-      id: 7,
+      id: 8,
       image: illu,
       date: "2023-01-23",
       images: [illu1, illu2, illu3],
@@ -143,7 +160,7 @@ import spotify_research from "../../assets/Spotify music analysis.pdf";
       tools: "Adobe Illustrator"
     },
     {
-      id: 8,
+      id: 9,
       image: project3,
       date: "2023-05-10",
       images: [project3, age2, age3],
@@ -155,7 +172,7 @@ import spotify_research from "../../assets/Spotify music analysis.pdf";
       tools: "React, SCSS"
     },
     {
-      id: 9,
+      id: 10,
       image: project4,
       date: "2023-05-06",
       images: [project4, user1, user2],
@@ -167,7 +184,7 @@ import spotify_research from "../../assets/Spotify music analysis.pdf";
       tools: "React, SCSS"
     },
     {
-      id: 10,
+      id: 11,
       image: project2,
       date: "2022-11-28",
       images: [project2, ui1, ui2],
@@ -179,7 +196,7 @@ import spotify_research from "../../assets/Spotify music analysis.pdf";
       tools: "Adobe XD, HTML, CSS"
     },
     {
-      id: 11,
+      id: 12,
       image: project6,
       date: "2023-01-01",
       images: [fifa2,project6, fifa],
