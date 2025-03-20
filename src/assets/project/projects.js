@@ -55,7 +55,7 @@ import pb3 from "./pb3.png"
 //file
 import research from "../../assets/Research Project.pdf";
 import spotify_research from "../../assets/Spotify music analysis.pdf";
-import pizza_report from "../../assets/pizza query report.pdf";
+import pizza_report from "../../assets/pizza query_report.pdf";
   export const projects = [
     {
       id: 1,
