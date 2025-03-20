@@ -75,7 +75,7 @@ import pizza_report from "../../assets/pizza query_report.pdf";
       image: climate,
       date: "2025-02-01",
       images: [cc1, cc2, cc3],
-      name: "Climate Change Tracker Dashbaord",
+      name: "Climate Change Tracker Dashboard",
       category: "Data Science",
       services: "Dashboard",
       link: "https://climate-change-tracker-dashboard.streamlit.app/",
