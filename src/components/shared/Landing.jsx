@@ -29,7 +29,7 @@ const Landing = () => {
             </button>
           </div>
           <div>
-            {theme == "light" ? <img src={darkDev} /> : <img src={lightDev} />}
+            {theme == "light" ? <img src={darkDev} alt="Arpana Sitoula Illustration"/> : <img src={lightDev} alt="Arpana Sitoula Illustrations"/>}
           </div>
         </div>
         {/* for large screen size */}
@@ -55,9 +55,9 @@ const Landing = () => {
           </div>
           <div className="lgLanding__body__image animate-pop-in">
             {theme == "light" ? (
-              <img src={darkDev} width="180%" />
+              <img src={darkDev} width="180%" alt="Arpana Illustration"/>
             ) : (
-              <img src={lightDev} width="180%" />
+              <img src={lightDev} width="180%" alt="Arpana Illustration"/>
             )}
           </div>
         </div>

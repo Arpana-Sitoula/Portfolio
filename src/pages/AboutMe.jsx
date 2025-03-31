@@ -12,7 +12,7 @@ const AboutMe = () => {
       <div className={`${theme}`}>
         <div className="aboutus">
           <div className="aboutus__img">
-            <img src={avatar} height={"500px"} width={"500px"} />
+            <img src={avatar} height={"500px"} width={"500px"} alt="Arpana Sitoula" />
           </div>
           <div className="aboutus__desc">
             My journey started in software development, where I worked with JavaScript for 1.5 years. Over time, I found myself drawn more toward data and the insights it can uncover. That curiosity led me to pursue a master’s in Data Science at Hochschule Fulda, where I’m exploring machine learning, analytics, and how data can be used to solve real-world problems.
